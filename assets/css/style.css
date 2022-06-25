@@ -1,0 +1,222 @@
+body{
+    font-family: 'Tajawal', sans-serif !important;
+}
+
+/* start global */
+
+.main_title{
+    font-size: 28px;
+    font-weight: 600
+}
+
+.big_title{
+    font-size: 35px;
+    font-weight: 600
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* End global */
+
+
+/* start hero section */
+
+.hero_section{
+    background-color: #0B1725;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-top: 22%;
+}
+
+.hero_section h1{
+    font-size: 41px;
+    margin-bottom: 30px;
+}
+
+.hero_section p{
+    font-size: 28px;
+    line-height: 2;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+
+.hero_section button{
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.hero_section button:hover{
+    border: 2px solid #0B1725;
+    color: #0B1725;
+    background-color: #fff;
+   
+}
+
+
+
+/* End hero section */
+
+/* start entro section  */
+.entro_section{
+    background-color: #E8F8F7;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.entro_section h2{
+    padding-bottom: 10px;
+ }
+
+
+
+.entro_section h2 span{
+   border-bottom: 5px solid #4FB7AC;
+}
+
+/* end entro secrion */
+
+
+/* start get start section */
+.get_start_section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.get_start_section .row p{
+    font-size: 18px !important;
+}
+/* End get start section */
+
+/* start steps section */
+.steps_section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F0F0F0;
+}
+
+.steps_section .card{
+    border-top: 8px solid #29B6AB;
+    border-radius: 12px;
+    position: relative;
+    padding-top: 50px;
+    text-align: center;
+    height: 330px;
+}
+
+
+.steps_section .number_step{
+    width: 45px;
+    height: 45px;
+    border: 1px solid #0B1725;
+    background-color: #0B1725;
+    color: #fff;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 20px;
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 22.5px);
+    transition-duration: 0.5s;
+}
+
+.steps_section .card:hover{
+    background-color: #FAFEFD;
+}
+
+
+.steps_section .card:hover .number_step{
+    border: 1px solid #29B6AB;
+    background-color: #29B6AB;
+ 
+}
+
+.steps_section img{
+    margin: 0px auto;
+}
+
+/* End steps section */
+
+
+/* start users_opinion_section */
+.users_opinion_section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #333333;
+    color: #fff;
+}
+
+.users_opinion_section .card{
+    color: #333;
+}
+
+/* end users_opinion_section */
+
+/* start section start_now */
+.start_now{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #29B6AB;
+    color: #fff;
+    text-align: center;
+}
+
+.start_now .get_start_btn{
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.start_now .get_start_btn:hover{
+ 
+    color: #0B1725;
+    background-color: #fff;
+}
+
+
+
+.start_now p{
+    font-size: 24px;
+}
+/* End section start_now */
+
+/* start footer */
+.footer{
+    background-color: #0B1725;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    color: #fff;
+
+}
+
+.footer .box_social{
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.footer .box_social i{
+    padding: 20px;
+    transition-duration: 0.2s;
+}
+
+.footer .box_social i:hover{
+   color: #29B6AB;
+   font-size: 28px;
+
+}
+
+/* end footer */
