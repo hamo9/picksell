@@ -512,7 +512,7 @@ a{
 }
 
 .profile_setting .card_profile_items .active{
-    color: var(--secondary-color);
+    color: var(--third-color);
 }
 
 .profile_setting .choose_setting{

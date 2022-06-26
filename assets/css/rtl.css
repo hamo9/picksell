@@ -52,3 +52,12 @@
 .container_with_lang .float-end{
     font-size: 25px;
 }
+
+.profile_setting .card_profile_items h4{
+    font-size: 20px !important;
+}
+
+input{
+    text-align: right;
+    direction: rtl;
+}

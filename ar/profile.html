@@ -1,11 +1,13 @@
 <!doctype html>
-<html lang="en">
+<!-- for arabic only -->
+<html lang="ar" dir="rlt">
+
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Picksell | profile</title>
+    <title>Picksell | profile ar</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +23,17 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+    <!-- bootstrap for arabic -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- css style for arabic only -->
+    <link rel="stylesheet" href="../assets/css/rtl.css">
 
     <!-- style for responsive pages -->
     <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -41,7 +51,7 @@
 <body>
 
 
-    <!-- navbar here -->
+   <!-- navbar here -->
     <!-- end navbar -->
 
     <!-- start profile page -->
@@ -53,30 +63,30 @@
                     <div class="card card-body card_profile_items shadow">
                         <div class="mb-2 active">
                             <h4> <img src="../assets/img/profile/account-desaturated.svg" alt="" width="45px" height="45px"> <span
-                                    class="p-3">Account</span></h4>
+                                    class="p-3">حسابي</span></h4>
                         </div>
                         <div class="mb-2">
                             <h4> <img src="../assets/img/profile/wallet-desaturated.svg" alt="" width="45px"
-                                    height="45px"><span class="p-3">Wallet</span></h4>
+                                    height="45px"><span class="p-3">المحفظه</span></h4>
                         </div>
                         <div class="mb-2">
                             <h4> <img src="../assets/img/profile/orders-desaturated.svg" alt="" width="45px"
-                                    height="45px"><span class="p-3">Orders</span></h4>
+                                    height="45px"><span class="p-3">الطلبات</span></h4>
                         </div>
                         <div class="mb-2">
                             <h4> <img src="../assets/img/profile/logout-desaturated.svg" alt="" width="45px"
-                                    height="45px"><span class="p-3">Logout</span> </h4>
+                                    height="45px"><span class="p-3">خروج</span> </h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-9 px-md-5">
 
-                    <h1>account setting</h1>
+                    <h1>اعدادات الحساب</h1>
                     <div class="choose_setting">
 
-                        <button class="personal_information active">personal information</button>
-                        <button class="change_password">change password</button>
-                        <button class="Referred_accounts">Referred accounts</button>
+                        <button class="personal_information active">المعلومات الشخصية</button>
+                        <button class="change_password">تغيير كلمة المرور</button>
+                        <button class="Referred_accounts">الحسابات المشار إليها</button>
 
                     </div>
 
@@ -87,15 +97,15 @@
                             
                     <div class="card card-body">
                         <div>
-                            <button class="btn btn-primary float-end">blue status</button>
+                            <button class="btn btn-primary float-end">الفئه الزرقاء</button>
                             
                             <img src="../assets/img/eldokan.png" alt="" width="80px" height="80px"
                                 class="mb-2 rounded">
                             <div>
-                                <h5>Name here</h5>
+                                <h5>اسم المستخدم</h5>
                                
                                 <p class="lead text-black-50">
-                                    Referral Code <span class="p-1">46ca5869b0110508</span> 
+                                    كود الاحاله <span class="p-1">46ca5869b0110508</span> 
                                     <i class="fa fa-copy p-2" id="copyButtonCode"></i>
                                 </p>
                             </div>
@@ -122,9 +132,8 @@
 
                                         </div>
                                         <div class="px-1 pt-1">
-                                            <h4> personal information</h4>
-                                            <p class="lead text-black-50">You can modify your personal information and some
-                                                settings</p>
+                                            <h4>المعلومات الشخصية</h4>
+                                            <p class="lead text-black-50">يمكنك تعديل معلوماتك الشخصية و بعض الإعدادات</p>
 
                                         </div>
 
@@ -133,34 +142,34 @@
                                     <form action="">
                                         <div class="row">
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Merchant code</label>
+                                                <label class="mb-2" for="">كود الاحاله</label>
                                                 <input disabled type="text" name="" id="" class="form-control"
                                                     value="123456">
                                             </div>
 
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Username</label>
+                                                <label class="mb-2" for="">اسم المستخدم</label>
                                                 <input disabled type="text" name="" id="" class="form-control"
                                                     value="hamada">
                                             </div>
 
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">First name</label>
+                                                <label class="mb-2" for="">الاسم الاول</label>
                                                 <input type="text" name="" id="" class="form-control" value="hamada">
                                             </div>
 
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Last name</label>
+                                                <label class="mb-2" for="">الاسم الاخير</label>
                                                 <input type="text" name="" id="" class="form-control" value="hamada">
                                             </div>
 
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Phone</label>
+                                                <label class="mb-2" for="">الهاتف</label>
                                                 <input type="tel" name="" id="" class="form-control" value="hamada">
                                             </div>
 
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Email</label>
+                                                <label class="mb-2" for="">البريد الالكتروني</label>
                                                 <input type="email" name="" id="" class="form-control" value="hamada">
                                             </div>
 
@@ -173,13 +182,13 @@
                                             </div>
 
                                             <div class="col-md-6 mt-3 mt-md-5 pt-md-5">
-                                                <label class="mb-2" for="">img</label>
+                                                <label class="mb-2" for="">الصوره</label>
                                                 <input type="file" name="" id="" class="form-control">
                                             </div>
 
                                         </div>
                                         <div class="text-center mt-5">
-                                            <button class="btn custom_btn rounded-pill shadow">Update Information</button>
+                                            <button class="btn custom_btn rounded-pill shadow">تحديث البيانات</button>
                                         </div>
                                     </form>
 
@@ -204,8 +213,8 @@
 
                                         </div>
                                         <div class="px-1 pt-1">
-                                            <h4>change password</h4>
-                                            <p class="lead text-black-50">You can change the password from here</p>
+                                            <h4>تغيير كلمة المرور</h4>
+                                            <p class="lead text-black-50">يمكنك تغيير كلمة المرور من هنا</p>
 
                                         </div>
 
@@ -216,25 +225,25 @@
 
 
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Old password</label>
+                                                <label class="mb-2" for="">كلمه المرور القديمه</label>
                                                 <input type="password" name="" id="" class="form-control">
                                             </div>
                                             <div class="col-12"></div>
 
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">New password</label>
+                                                <label class="mb-2" for="">كلمه المرور الجديده</label>
                                                 <input type="text" name="" id="" class="form-control">
                                             </div>
 
                                             <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">confirm new password</label>
+                                                <label class="mb-2" for="">تأكيد كلمه المرور</label>
                                                 <input type="text" name="" id="" class="form-control">
                                             </div>
 
                                         </div>
 
                                         <div class="text-center mt-5">
-                                            <button class="btn custom_btn rounded-pill shadow">Update Information</button>
+                                            <button class="btn custom_btn rounded-pill shadow">تحديث البيانات</button>
                                         </div>
                                     </form>
 
@@ -258,8 +267,8 @@
 
                                         </div>
                                         <div class="px-1 pt-1">
-                                            <h4>Referred accounts</h4>
-                                            <p class="lead text-black-50">You can modify your personal information and some settings</p>
+                                            <h4>الحسابات المشار إليها</h4>
+                                            <p class="lead text-black-50">يمكنك تعديل معلوماتك الشخصية و بعض الإعدادات</p>
                                         </div>
 
                                     </div>
@@ -268,14 +277,14 @@
                                     <div class="row mt-4">
                                         <div class="col-6">
                                             <div class="card card-body bg-color">
-                                                <h4>Count Orders</h4>
+                                                <h4>عدد الطلبات</h4>
                                                 <h5 class="my-5  text-center">4</h5>
                                             </div>
                                         </div>
 
                                         <div class="col-6">
                                             <div class="card card-body bg-color">
-                                                <h4>Count accounts</h4>
+                                                <h4>عدد الحسابات</h4>
                                                 <h5 class="my-5  text-center">9</h5>
                                             </div>
                                         </div>
@@ -286,7 +295,7 @@
                                         <input type="text" id="copyTarget" value="https://picksell.com/register/46ca5869b0110508"> 
 
                                     <br>
-                                    <button id="copyButton" class="btn custom_btn rounded-pill shadow"> referral link <i class="fas fa-copy"></i></button>
+                                    <button id="copyButton" class="btn custom_btn rounded-pill shadow"> رابط الاحاله <i class="fas fa-copy"></i></button>
                                 </div>
                             </div>
 
@@ -307,47 +316,48 @@
 
 
 
-    <!-- start footer -->
-    <section class="footer" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 mb-5">
-                    <h6 class="main_title text-white mb-5">Picksell.com</h6>
-                    <p class="lead">A picksell supports everyone who thinks to build his e-commerce with many
-                        services. First, a platform that allows merchants to manage and follow up on orders, propose
-                        and provide a wide range of products, shipping services for products, delivery to the final
-                        customer and collection from them, instant transfer of sales value to merchants, in addition
-                        to marketing advice that helps merchants sell their products through the Internet and
-                        suggest products that suit them and suit their target customers.</p>
-                </div>
-                <div class="col-md-5 text-center">
-                    <h4 class="text-white">Follow us on social media</h4>
-                    <div class="box_social text-center">
-                        <div class="d-flex justify-content-center">
-                            <div><i class="bi bi-facebook"></i></div>
-                            <div><i class="bi bi-whatsapp"></i></div>
-                            <div><i class="bi bi-linkedin"></i></div>
-                            <div><i class="bi bi-twitter"></i></div>
-                            <div><i class="bi bi-youtube"></i></div>
-                        </div>
+   
+        <!-- start footer -->
+        <section class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <h6 class="main_title text-white mb-5">Picksell.com</h6>
+                        <p class="lead">
+                            تاجر بتدعم كل اللي بيفكر يبني تجارته الإلكترونية بخدمات كتير. أولا منصة تتيح للتجار إدارة
+                            ومتابعة الطلبيات، اقتراح وتوفير مجموعة كبيرة من المنتجات، خدمات شحن للمنتجات وتوصيل للعميل
+                            النهائي والتحصيل منهم، تحويل فوري لقيمة المبيعات للتجار، بالإضافة لاستشارات تسويقية تساعد
+                            التجار في بيع منتجاتهم من خلال الإنترنت واقتراح منتجات تناسبهم وتناسب عملائهم المستهدفين.
+                        </p>
                     </div>
-                    <h5 class="mt-5">Contact us through e-mail:</h5>
+                    <div class="col-md-5 text-center">
+                        <h4 class="text-white">تابعنا على مواقع التواصل الإجتماعي</h4>
+                        <div class="box_social text-center">
+                            <div class="d-flex justify-content-center">
+                                <div><i class="bi bi-facebook"></i></div>
+                                <div><i class="bi bi-whatsapp"></i></div>
+                                <div><i class="bi bi-linkedin"></i></div>
+                                <div><i class="bi bi-twitter"></i></div>
+                                <div><i class="bi bi-youtube"></i></div>
+                            </div>
+                        </div>
+                        <h5 class="mt-5">تواصل معنا من خلال البريد الإلكتروني:</h5>
+                        <p class="lead">
+                            <strong class="pr-3">البريد الإلكتروني </strong>
+                            <a href="#" class="text-info">
+                                example@picksell.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-5 text-center">
                     <p class="lead">
-                        <strong class="pr-3"> E-mail </strong>
-                        <a href="#" class="text-info">
-                            example@picksell.com
-                        </a>
+                        جميع الحقوق محفوظة لشركة بيكسل © 2022
                     </p>
                 </div>
             </div>
-            <div class="mt-5 text-center">
-                <p class="lead">
-                    all rights are save 2022 picksell.com
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- End footer -->
+        </section>
+        <!-- End footer -->
 
 
     </section>
@@ -360,11 +370,11 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
-    <!-- script for profile bage only -->
-    <script src="../assets/js/scripts_for_profile.js"></script>
+   <!-- script for profile bage only -->
+   <script src="../assets/js/scripts_for_profile.js"></script>
  
 
-    
+  
 
 </body>
 
