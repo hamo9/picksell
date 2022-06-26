@@ -43,6 +43,73 @@ a{
 
 /* End global */
 
+/* start login and register */
+
+/* Start Modal */
+#staticBackdropLabel1, #staticBackdropLabel2{
+    text-align: center;
+    font-family: 'Courgette', cursive ;
+    font-size: larger;
+    color: #1F40B2;
+}
+
+.modal-body .modal_para{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modal-body div p{
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 600;
+    color: #1F40B2;
+    font-size: medium;
+}
+
+#logInForm label{
+    color: black;
+}
+
+#logInForm input{
+    border:1px solid #F4C80E;
+}
+
+#logInForm button, #signUpForm button{
+    font-family: 'Courgette', cursive ;
+    font-size: large;
+    background-color: #F4C80E;
+    color: #1F40B2;
+    border-radius: 35px;
+    width: 140px;
+    height: 50px;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+.logWithGoogle, .signWithGoogle{
+    font-family: 'Courgette', cursive ;
+    font-size: large;
+    background-color: #F4C80E;
+    color: #1F40B2;
+    border-radius: 35px;
+    height: 50px;
+    width: 200px;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+.logWithGoogle:hover ,.signWithGoogle:hover{
+    color: #1F40B2;
+}
+
+.modal-body a:hover{
+    text-decoration: underline;
+}
+/* End Modal */
+
+/* End login and register */
+
 
 
 /* start navbar */
