@@ -41,6 +41,35 @@ a{
     text-decoration: none !important;
 }
 
+.custom_btn{
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: 1px solid var(--secondary-color);
+    outline: var(--main-color);
+    border-radius: 50%;
+    padding: 12px;
+    opacity: 0.7;
+    transition-duration: var(--main-duration);
+    font-size: 18px;
+}
+
+.custom_btn:hover{
+    opacity: 1;
+    color: #fff;
+}
+
+.bg-color{
+    background-color: var(--main-color-alt);
+    border-color: var(--main-color-alt);
+}
+
+#copyTarget{
+    opacity: 0;
+}
+
+#copyTargetCode{
+    opacity: 0;
+}
 /* End global */
 
 /* start login and register */
@@ -472,6 +501,40 @@ a{
 
 /* end newest_products */
 
+/* start profile settings */
+.profile_setting{
+    padding: 100px 0px;
+
+}
+
+.profile_setting .card_profile_items{
+    color: #707070;
+}
+
+.profile_setting .card_profile_items .active{
+    color: var(--secondary-color);
+}
+
+.profile_setting .choose_setting{
+    border-bottom: 1px solid silver;
+    display: flex;
+    font-size: 18px;
+}
+
+.profile_setting .choose_setting button{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.profile_setting .choose_setting .active{
+   border-bottom: 2px solid var(--secondary-color);
+}
+
+
+
+/* end profile settings */
 
 
 /* start footer */
