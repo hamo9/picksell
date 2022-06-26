@@ -21,3 +21,34 @@
     line-height: 2;
     font-size: 22px;
  }
+
+ 
+.category_item h5{
+    text-align: right;
+    direction: rtl;
+}
+
+.float-end {
+    float: left !important;
+}
+
+.container_with_lang{
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+.box_slider button{
+    font-size: 16px;
+}
+
+.box_slider .icon_heart{
+    font-size: 28px;
+}
+
+.container_with_lang h1{
+    font-size: 30px;
+}
+
+.container_with_lang .float-end{
+    font-size: 25px;
+}

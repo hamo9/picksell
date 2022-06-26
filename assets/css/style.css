@@ -261,7 +261,6 @@ a{
    background-color: var(--secondary-color);
    top: calc(50% - 25px);
    border-radius: 50%;
-   right: -5px;
    opacity: 0.5;
 }
 
@@ -276,7 +275,6 @@ a{
     background-color: var(--secondary-color);
     top: calc(50% - 25px);
     border-radius: 50%;
-    left: -5px;
     opacity: 0.5;
 }
 .carousel-control-prev:hover{
@@ -310,6 +308,10 @@ a{
     background-color: #fff;
     color: var(--secondary-color);
     
+}
+
+.category_item h5{
+    font-size: 16px;
 }
 /* end categories_section */
 
@@ -370,9 +372,12 @@ a{
 }
 
 
-.card_cart .heart_icon i{
-   
-    font-size: 25px;
+.box_slider button{
+    font-size: 20px;
+}
+
+.box_slider .icon_heart{
+    font-size: 28px;
 }
 
 /* end best seller */
