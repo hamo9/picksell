@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Picksell | profile</title>
+    <title>Picksell | orders</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,8 +47,8 @@
 <body>
 
 
-    <!-- navbar here -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+     <!-- navbar here -->
+     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid nav-cont">
             <img src="../assets/img/Logo1.png" alt="" width="165" height="60">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -208,6 +208,7 @@
     </div>
     <!-- end navbar -->
 
+
     <!-- start profile page -->
     <section class="profile_setting" id="profile_setting">
         <div class="container">
@@ -215,7 +216,7 @@
 
                 <div class="col-md-3 p-3 d-none d-md-block">
                     <div class="card card-body card_profile_items shadow">
-                        <div class="mb-2 active">
+                        <div class="mb-2 ">
                             <h4> <img src="../assets/img/profile/account-desaturated.svg" alt="" width="45px"
                                     height="45px"> <span class="p-3">Account</span></h4>
                         </div>
@@ -223,7 +224,7 @@
                             <h4> <img src="../assets/img/profile/wallet-desaturated.svg" alt="" width="45px"
                                     height="45px"><span class="p-3">Wallet</span></h4>
                         </div>
-                        <div class="mb-2">
+                        <div class="mb-2 active">
                             <h4> <img src="../assets/img/profile/orders-desaturated.svg" alt="" width="45px"
                                     height="45px"><span class="p-3">Orders</span></h4>
                         </div>
@@ -233,237 +234,84 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-9 px-md-5">
 
-                    <h1>account setting</h1>
-                    <div class="choose_setting">
+                    <button class="btn btn_second float-end" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Tooltip on top"> <i class="fas fa-file-excel"></i> export excel file</button>
+                    <h1>Orders</h1>
 
-                        <button class="personal_information active">personal information</button>
-                        <button class="change_password">change password</button>
-                        <button class="Referred_accounts">Referred accounts</button>
+                    <div class="card card-body bg-color">
+                        <div class="row">
+                            <div class="col-6 col-md-7 mt-4">
+                                <div class="box_input_order">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" name="" id="" placeholder="test here">
+                                </div>
 
-                    </div>
-
-
-                    <!-- globale div on setting -->
-                    <!-- link ref here -->
-                    <input type="text" name="" id="copyTargetCode" value="46ca5869b0110508">
-
-                    <div class="card card-body">
-                        <div>
-                            <button class="btn btn-primary float-end">blue status</button>
-
-                            <img src="../assets/img/eldokan.png" alt="" width="80px" height="80px" class="mb-2 rounded">
-                            <div>
-                                <h5>Name here</h5>
-
-                                <p class="lead text-black-50">
-                                    Referral Code <span class="p-1">46ca5869b0110508</span>
-                                    <i class="fa fa-copy p-2" id="copyButtonCode"></i>
-                                </p>
                             </div>
+                            <div class="col-6 col-md-5 mt-4">
+                                <div class="box_input_order">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" name="" id="" placeholder="test here">
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <label for="" class="p-1 pt-3 ">from date</label>
+                                <div class="box_input_order">
+                                    <input type="date" name="" id="" class="input_date">
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <label for="" class="p-1 pt-3 ">To date</label>
+                                <div class="box_input_order">
+                                    <input type="date" name="" id="" class="input_date">
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <label for="" class="p-1 pt-3 ">order status</label>
+                                <div class="box_input_order">
+                                    <select name="" id="">
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+                                        <option value="">10</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3 mt-4 pt-3">
+                                <button class="btn btn_style">
+                                    search
+                                </button>
+                            </div>
+
+
+
                         </div>
                     </div>
 
-                    <!-- End globale div on setting -->
-
-
-
-                    <div class="box_sections_settings">
-
-
-                        <!-- start personal information tap  -->
-                        <div id="personal_information">
-
-
-                            <div class="card mt-4">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="px-1">
-                                            <img src="../assets/img/profile/personal-i.png" alt="" width="70px"
-                                                height="70px">
-
-                                        </div>
-                                        <div class="px-1 pt-1">
-                                            <h4> personal information</h4>
-                                            <p class="lead text-black-50">You can modify your personal information and
-                                                some
-                                                settings</p>
-
-                                        </div>
-
-                                    </div>
-                                    <hr>
-                                    <form action="">
-                                        <div class="row">
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Merchant code</label>
-                                                <input disabled type="text" name="" id="" class="form-control"
-                                                    value="123456">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Username</label>
-                                                <input disabled type="text" name="" id="" class="form-control"
-                                                    value="hamada">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">First name</label>
-                                                <input type="text" name="" id="" class="form-control" value="hamada">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Last name</label>
-                                                <input type="text" name="" id="" class="form-control" value="hamada">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Phone</label>
-                                                <input type="tel" name="" id="" class="form-control" value="hamada">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Email</label>
-                                                <input type="email" name="" id="" class="form-control" value="hamada">
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-
-                                            <div class="col-md-6 mt-3 text-center">
-                                                <img src="../assets/img/how-create.svg" width="300px" height="300px"
-                                                    class="rounded-pill m-auto" alt="">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3 mt-md-5 pt-md-5">
-                                                <label class="mb-2" for="">img</label>
-                                                <input type="file" name="" id="" class="form-control">
-                                            </div>
-
-                                        </div>
-                                        <div class="text-center mt-5">
-                                            <button class="btn custom_btn rounded-pill shadow">Update
-                                                Information</button>
-                                        </div>
-                                    </form>
-
-
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- end  personal information tap  -->
-
-                        <!-- start change_password -->
-                        <div id="change_password">
-
-                            <div class="card mt-4">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="px-1">
-                                            <img src="../assets/img/profile/password-i.png" alt="" width="70px"
-                                                height="70px">
-
-                                        </div>
-                                        <div class="px-1 pt-1">
-                                            <h4>change password</h4>
-                                            <p class="lead text-black-50">You can change the password from here</p>
-
-                                        </div>
-
-                                    </div>
-                                    <hr>
-                                    <form action="">
-                                        <div class="row">
-
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Old password</label>
-                                                <input type="password" name="" id="" class="form-control">
-                                            </div>
-                                            <div class="col-12"></div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">New password</label>
-                                                <input type="text" name="" id="" class="form-control">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">confirm new password</label>
-                                                <input type="text" name="" id="" class="form-control">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="text-center mt-5">
-                                            <button class="btn custom_btn rounded-pill shadow">Update
-                                                Information</button>
-                                        </div>
-                                    </form>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- End change_password -->
-
-                        <!-- start Referred_accounts -->
-                        <div id="Referred_accounts">
-
-
-                            <div class="card mt-4">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="px-1">
-                                            <img src="../assets/img/profile/referrals-i.png" alt="" width="70px"
-                                                height="70px">
-
-                                        </div>
-                                        <div class="px-1 pt-1">
-                                            <h4>Referred accounts</h4>
-                                            <p class="lead text-black-50">You can modify your personal information and
-                                                some settings</p>
-                                        </div>
-
-                                    </div>
-                                    <hr>
-
-                                    <div class="row mt-4">
-                                        <div class="col-6">
-                                            <div class="card card-body bg-color">
-                                                <h4>Count Orders</h4>
-                                                <h5 class="my-5  text-center">4</h5>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-6">
-                                            <div class="card card-body bg-color">
-                                                <h4>Count accounts</h4>
-                                                <h5 class="my-5  text-center">9</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="text-center my-4">
-                                    <input type="text" id="copyTarget"
-                                        value="https://picksell.com/register/46ca5869b0110508">
-
-                                    <br>
-                                    <button id="copyButton" class="btn custom_btn rounded-pill shadow"> referral link <i
-                                            class="fas fa-copy"></i></button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- End Referred_accounts -->
-
+                    <div class="box_choose_orders">
+                        <button class="active all_orders">all</button>
+                        <button class="current_orders">current orders</button>
+                        <button class="Previous_orders">Previous orders</button>
+                        <button class="Exchanges_Returns">Exchanges and Returns</button>
                     </div>
-
 
                 </div>
 
@@ -472,6 +320,8 @@
         </div>
     </section>
     <!-- end profile page -->
+
+
 
 
     <!-- start footer -->
@@ -532,7 +382,27 @@
     <script src="../assets/js/main.js"></script>
 
 
+    <script>
+        $(document).ready(function () {
+            $('.all_orders').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            });
 
+            $('.current_orders').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+
+            $('.Previous_orders').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+
+            $('.Exchanges_Returns').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+
+
+        });
+    </script>
 
 </body>
 
