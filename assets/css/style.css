@@ -116,6 +116,102 @@ a{
 
 }
 
+.square_top_one{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+
+}
+
+.square_top_tow{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+
+}
+
+
+.square_top_three{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--main-color-alt);
+    opacity: 0.5;
+
+}
+
+.square_top_fore{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-color-alt);
+    opacity: 0.5;
+
+}
+
+.square_bottom_one{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+
+}
+
+.square_bottom_tow{
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    opacity: 0.5;
+}
+
+
+.hero_square_one{
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color-alt);
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+
+.hero_square_tow{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-color-alt);
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
 
 
 /* End global */
@@ -234,6 +330,7 @@ a{
     text-align: center !important;
     color: #fff;
     padding-top: 22%;
+    position: relative;
 }
 
 .hero_section h1{
@@ -306,6 +403,8 @@ a{
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: #F0F0F0;
+
+    position: relative;
 }
 
 .steps_section .card{
@@ -353,6 +452,7 @@ a{
 
 /* start users_opinion_section */
 .users_opinion_section{
+    position: relative;
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: var(--third-color);
