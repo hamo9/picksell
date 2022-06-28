@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<!-- for arabic only -->
+<html lang="ar" dir="rlt">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Picksell | all peoducts</title>
+    <title>Picksell all products ar</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +22,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- bootstrap for arabic -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- css style for arabic only -->
+    <link rel="stylesheet" href="../assets/css/rtl.css">
+    
 
     <!-- style for responsive pages -->
     <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -206,9 +213,9 @@
         <!-- start route pages links -->
         <div class="route_links mt-4">
             <div class="d-flex my-3">
-                <a href="#"><p>Home page <span class="px-2">></span></p></a>
-                <a href="#"><p>Products <span class="px-2">></span></p></a>
-                <a href="#" class="active"><p>all products</p></a>
+                <a href="#"><p>الرئيسيه <span class="px-2">></span></p></a>
+                <a href="#"><p>المنتجات <span class="px-2">></span></p></a>
+                <a href="#" class="active"><p>جميع المنتجات</p></a>
             </div>
         </div>
        
@@ -228,7 +235,7 @@
                             
                         <div class="dropdown">
                             <a class="btn dropdown_category border-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                categories
+                                الاقسام
                             </a>
                         
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -243,40 +250,40 @@
 
                     <!-- this card show on desktop only  [ list categories ]-->
                     <div class="card card-body d-none d-md-block">
-                        <h4 class="mb-4">categories</h4>
+                        <h4 class="mb-4">الاقسام</h4>
                       
                             <a href="#" class=" active">
                                 <p class="lead">
                                     <i class="bi bi-columns-gap px-2"></i>
-                                    all products
+                                   جميع المنتجات
                                 </p>
                             </a>
     
-                            <a href="#">
+                            <a href="#" class="">
                                 <p class="lead">
                                     <i class="bi bi-columns-gap px-2"></i>
-                                    best seller
+                                   جميع المنتجات
+                                </p>
+                            </a>
+
+                            <a href="#" class="">
+                                <p class="lead">
+                                    <i class="bi bi-columns-gap px-2"></i>
+                                   جميع المنتجات
                                 </p>
                             </a>
     
-                            <a href="#">
+                            <a href="#" class="">
                                 <p class="lead">
                                     <i class="bi bi-columns-gap px-2"></i>
-                                    best seller
+                                   جميع المنتجات
                                 </p>
                             </a>
     
-                            <a href="#">
+                            <a href="#" class="">
                                 <p class="lead">
                                     <i class="bi bi-columns-gap px-2"></i>
-                                    best seller
-                                </p>
-                            </a>
-    
-                            <a href="#">
-                                <p class="lead">
-                                    <i class="bi bi-columns-gap px-2"></i>
-                                    best seller
+                                   جميع المنتجات
                                 </p>
                             </a>
                         
@@ -286,14 +293,15 @@
 
                     <div class="my-5 profit d-none d-md-block">
                         <h4 class="text_main_color mb-3">profit picksell products</h4>
+                        
                         <a href="#" class="d-flex profit_item" >
                             <div class="p-2">
                                 <img class="rounded" src="../assets/img/profit.jpg" width="80px" height="80px" alt="">
                             </div>
                             <div class="p-2">
-                                <h6 class="name">name here</h6>
+                                <h6 class="name">اسم المنتج</h6>
                                 <div class="price"><strong>330 </strong> <span class="p-2">Eg</span></div>
-                                <div class="earning"><span>Earning : </span> <strong class="p-2">50</strong></div>
+                                <div class="earning"><span>الربح : </span> <strong class="p-2">50</strong></div>
                             </div>
                         </a>
 
@@ -302,9 +310,9 @@
                                 <img class="rounded" src="../assets/img/profit.jpg" width="80px" height="80px" alt="">
                             </div>
                             <div class="p-2">
-                                <h6 class="name">name here</h6>
+                                <h6 class="name">اسم المنتج</h6>
                                 <div class="price"><strong>330 </strong> <span class="p-2">Eg</span></div>
-                                <div class="earning"><span>Earning : </span> <strong class="p-2">50</strong></div>
+                                <div class="earning"><span>الربح : </span> <strong class="p-2">50</strong></div>
                             </div>
                         </a>
 
@@ -313,11 +321,12 @@
                                 <img class="rounded" src="../assets/img/profit.jpg" width="80px" height="80px" alt="">
                             </div>
                             <div class="p-2">
-                                <h6 class="name">name here</h6>
+                                <h6 class="name">اسم المنتج</h6>
                                 <div class="price"><strong>330 </strong> <span class="p-2">Eg</span></div>
-                                <div class="earning"><span>Earning : </span> <strong class="p-2">50</strong></div>
+                                <div class="earning"><span>الربح : </span> <strong class="p-2">50</strong></div>
                             </div>
                         </a>
+
                     </div>
 
                     <div class="my-5 recently_arrived  d-none d-md-block">
@@ -327,9 +336,9 @@
                                 <img class="rounded" src="../assets/img/recintly.jpg" width="80px" height="80px" alt="">
                             </div>
                             <div class="p-2">
-                                <h6 class="name">name here</h6>
+                                <h6 class="name">اسم المنتج</h6>
                                 <div class="price"><strong>330 </strong> <span class="p-2">Eg</span></div>
-                                <div class="earning"><span>Earning : </span> <strong class="p-2">50</strong></div>
+                                <div class="earning"><span>الربح : </span> <strong class="p-2">50</strong></div>
                             </div>
                         </a>
 
@@ -338,9 +347,9 @@
                                 <img class="rounded" src="../assets/img/recintly.jpg" width="80px" height="80px" alt="">
                             </div>
                             <div class="p-2">
-                                <h6 class="name">name here</h6>
+                                <h6 class="name">اسم المنتج</h6>
                                 <div class="price"><strong>330 </strong> <span class="p-2">Eg</span></div>
-                                <div class="earning"><span>Earning : </span> <strong class="p-2">50</strong></div>
+                                <div class="earning"><span>الربح : </span> <strong class="p-2">50</strong></div>
                             </div>
                         </a>
 
@@ -349,11 +358,12 @@
                                 <img class="rounded" src="../assets/img/recintly.jpg" width="80px" height="80px" alt="">
                             </div>
                             <div class="p-2">
-                                <h6 class="name">name here</h6>
+                                <h6 class="name">اسم المنتج</h6>
                                 <div class="price"><strong>330 </strong> <span class="p-2">Eg</span></div>
-                                <div class="earning"><span>Earning : </span> <strong class="p-2">50</strong></div>
+                                <div class="earning"><span>الربح : </span> <strong class="p-2">50</strong></div>
                             </div>
                         </a>
+
                     </div>
 
                 
@@ -364,11 +374,11 @@
                 <div class="col-md-9">
                     <div class="row  mb-3">
                         <div class="col-md-4 mb-3">
-                            <h5>all products <span class="text-black-50">( 122 results )</span></h5>
+                            <h5>جميع المنتجات <span class="text-black-50">( 122 نتيجه )</span></h5>
                         </div>
                         <div class="row col-5 col-md-3">
                             <div class="col-5 col-md-5 text-end">
-                                <span class="text-black-50 fs-5 px-2">view</span>
+                                <span class="text-black-50 fs-5 px-2">عرض</span>
                             </div>
                             <div class="col-7 col-md-7">
                                 <select name="" id="" class="my_select col-12">
@@ -381,13 +391,13 @@
                         <div class="row col-7 col-md-5">
                             
                                 <div class="col-4 col-md-5 text-end">
-                                    <span class="text-black-50 fs-5 ">sort by</span>
+                                    <span class="text-black-50 fs-5">ترتيب حسب</span>
                                 </div>
                                 
                                 <div class="col-8 col-md-7">
                                     <select name="" id="" class="my_select col-12">
-                                        <option value="">best seller</option>
-                                        <option value="">newes products</option>
+                                        <option value="">الاكثر مبيعا</option>
+                                        <option value="">اجدد المنتجات</option>
                                     </select>
                                 </div>
                                 
@@ -397,146 +407,116 @@
                     <div class="container_all_products">
                         <div class="row">
 
+                            
                             <div class="col-md-4">
-                                <div class="card card-body mb-4 card_cart">
+                                <div class="card card-body shadow mb-4 card_cart">
                                     <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                                    <div class="text-black-50">category name</div>
-                                    <h3>product name</h3>
+                                    <div class="text-black-50">اسم القسم</div>
+                                    <h3>اسم المنتج</h3>
                                     <p class="lead">
-                                        <strong>400 $</strong>
+                                        <strong>400 جنيه</strong>
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill col-12">add to cart <i class="bi bi-cart-plus"></i></button>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
                                         
                                     </div>
+        
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <div class="card card-body mb-4 card_cart">
+                                <div class="card card-body shadow mb-4 card_cart">
                                     <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                                    <div class="text-black-50">category name</div>
-                                    <h3>product name</h3>
+                                    <div class="text-black-50">اسم القسم</div>
+                                    <h3>اسم المنتج</h3>
                                     <p class="lead">
-                                        <strong>400 $</strong>
+                                        <strong>400 جنيه</strong>
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill col-12">add to cart <i class="bi bi-cart-plus"></i></button>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
                                         
                                     </div>
+        
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <div class="card card-body mb-4 card_cart">
+                                <div class="card card-body shadow mb-4 card_cart">
                                     <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                                    <div class="text-black-50">category name</div>
-                                    <h3>product name</h3>
+                                    <div class="text-black-50">اسم القسم</div>
+                                    <h3>اسم المنتج</h3>
                                     <p class="lead">
-                                        <strong>400 $</strong>
+                                        <strong>400 جنيه</strong>
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill col-12">add to cart <i class="bi bi-cart-plus"></i></button>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
                                         
                                     </div>
+        
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <div class="card card-body mb-4 card_cart">
+                                <div class="card card-body shadow mb-4 card_cart">
                                     <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                                    <div class="text-black-50">category name</div>
-                                    <h3>product name</h3>
+                                    <div class="text-black-50">اسم القسم</div>
+                                    <h3>اسم المنتج</h3>
                                     <p class="lead">
-                                        <strong>400 $</strong>
+                                        <strong>400 جنيه</strong>
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill col-12">add to cart <i class="bi bi-cart-plus"></i></button>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
                                         
                                     </div>
+        
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <div class="card card-body mb-4 card_cart">
+                                <div class="card card-body shadow mb-4 card_cart">
                                     <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                                    <div class="text-black-50">category name</div>
-                                    <h3>product name</h3>
+                                    <div class="text-black-50">اسم القسم</div>
+                                    <h3>اسم المنتج</h3>
                                     <p class="lead">
-                                        <strong>400 $</strong>
+                                        <strong>400 جنيه</strong>
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill col-12">add to cart <i class="bi bi-cart-plus"></i></button>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
                                         
                                     </div>
+        
                                 </div>
                             </div>
-
-                            <div class="col-md-4">
-                                <div class="card card-body mb-4 card_cart">
-                                    <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                                    <div class="text-black-50">category name</div>
-                                    <h3>product name</h3>
-                                    <p class="lead">
-                                        <strong>400 $</strong>
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill col-12">add to cart <i class="bi bi-cart-plus"></i></button>
-                                        </div>
-                                        <div class="col-3 text-center">
-                                            <i class="bi bi-heart btn icon_heart fs-3"></i>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card card-body mb-4 card_cart">
-                                    <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                                    <div class="text-black-50">category name</div>
-                                    <h3>product name</h3>
-                                    <p class="lead">
-                                        <strong>400 $</strong>
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill col-12">add to cart <i class="bi bi-cart-plus"></i></button>
-                                        </div>
-                                        <div class="col-3 text-center">
-                                            <i class="bi bi-heart btn icon_heart fs-3"></i>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                          
 
                         </div>
                     </div>
@@ -557,19 +537,19 @@
     
         <!-- start footer -->
         <section class="footer" id="footer">
-            <div class="container">
+            <div class="container container_with_lang">
                 <div class="row">
                     <div class="col-md-7 mb-5">
                         <h6 class="main_title text-white mb-5">Picksell.com</h6>
-                        <p class="lead">A picksell supports everyone who thinks to build his e-commerce with many
-                            services. First, a platform that allows merchants to manage and follow up on orders, propose
-                            and provide a wide range of products, shipping services for products, delivery to the final
-                            customer and collection from them, instant transfer of sales value to merchants, in addition
-                            to marketing advice that helps merchants sell their products through the Internet and
-                            suggest products that suit them and suit their target customers.</p>
+                        <p class="lead">
+                            تاجر بتدعم كل اللي بيفكر يبني تجارته الإلكترونية بخدمات كتير. أولا منصة تتيح للتجار إدارة
+                            ومتابعة الطلبيات، اقتراح وتوفير مجموعة كبيرة من المنتجات، خدمات شحن للمنتجات وتوصيل للعميل
+                            النهائي والتحصيل منهم، تحويل فوري لقيمة المبيعات للتجار، بالإضافة لاستشارات تسويقية تساعد
+                            التجار في بيع منتجاتهم من خلال الإنترنت واقتراح منتجات تناسبهم وتناسب عملائهم المستهدفين.
+                        </p>
                     </div>
                     <div class="col-md-5 text-center">
-                        <h4 class="text-white">Follow us on social media</h4>
+                        <h4 class="text-white">تابعنا على مواقع التواصل الإجتماعي</h4>
                         <div class="box_social text-center">
                             <div class="d-flex justify-content-center">
                                 <div><i class="bi bi-facebook"></i></div>
@@ -579,9 +559,9 @@
                                 <div><i class="bi bi-youtube"></i></div>
                             </div>
                         </div>
-                        <h5 class="mt-5">Contact us through e-mail:</h5>
+                        <h5 class="mt-5">تواصل معنا من خلال البريد الإلكتروني:</h5>
                         <p class="lead">
-                            <strong class="pr-3"> E-mail </strong>
+                            <strong class="pr-3">البريد الإلكتروني </strong>
                             <a href="#" class="text-info">
                                 example@picksell.com
                             </a>
@@ -590,18 +570,14 @@
                 </div>
                 <div class="mt-5 text-center">
                     <p class="lead">
-                        all rights are save 2022 picksell.com
+                        جميع الحقوق محفوظة لشركة بيكسل © 2022
                     </p>
                 </div>
             </div>
         </section>
         <!-- End footer -->
 
-
     </section>
-
-
-
 
 
 

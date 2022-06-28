@@ -1,12 +1,44 @@
 @media (max-width: 991px) {
   
+    .container_list_of_orders .box_order_detailes .order_header{
+        font-size: 14px;
+    } 
+
+    .modal-fullscreen,.modal-fullscreen-rate{
+      width: 100% !important;
+      padding: 2%;
+      border-radius: 5px;
+      height: calc(100vh - 4%);
+    }
+
+    
+    .modal-fullscreen-rate{
+      width: 100% !important;
+      padding: 2px;
+      border-radius: 5px;
+      height: auto;
+
+    }
+
 
   }
 
 /* Small */
-@media (min-width: 768px) {
-  
-   
+@media (min-width: 992px) {
+  .modal-fullscreen{
+    width: 70% !important;
+    padding: 2%;
+    border-radius: 5px;
+    height: calc(100vh - 2%);
+
+  }
+ 
+  .modal-fullscreen-rate{
+    width: 60% !important;
+    padding: 2%;
+    border-radius: 5px;
+    height: auto;
+  }
 }
 
 /* Medium */

@@ -12,23 +12,25 @@
   } */
 
   :root {
-    --main-color: #062C30;
+    --main-color: #0066cc;
     --main-color-alt: #F5F5F5;
-    --secondary-color: #05595B;
-    --third-color: #E2D784;
+    --secondary-color: #F4C80E;
+    --third-color: #F4C80E;
     --blue-color: #0066cc;
 
     --main-duration: 0.5s;
-  }
+}
 
 
-  
 body{
     font-family: 'Tajawal', sans-serif !important;
     box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* start global */
+
 
 .main_title{
     font-size: 28px;
@@ -75,13 +77,7 @@ a{
     opacity: 0;
 }
 
-.btn_style{
-    background-color: var(--secondary-color);
-    color: #fff;
-    border: 1px solid var(--secondary-color);
-    opacity: 0.7;
-    font-size: 18px;
-}
+
 
 .btn_style:hover{
     opacity: 1;
@@ -219,6 +215,50 @@ a{
     color: var(--secondary-color);
 }
 
+.owl-prev , .owl-next{
+    opacity:0;
+}
+
+.btn_main_color{
+    background-color: var(--main-color);
+    color: #fff;
+    opacity: 0.9;
+    outline: none;
+}
+
+.btn_main_color:hover{
+    opacity: 1;
+    color: #fff;
+    outline: none;
+
+}
+
+.btn_second_color{
+    background-color: var(--secondary-color);
+    color: #fff;
+    opacity: 0.9;
+    outline: none;
+
+}
+
+.btn_second_color:hover{
+    opacity: 1;
+    color: #fff;
+    outline: none;
+
+}
+
+.my_select{
+    border: 1px solid silver;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.icon_heart{
+    position: relative;
+    top: -2px;
+}
 /* End global */
 
 /* start login and register */
@@ -237,13 +277,13 @@ a{
     padding-bottom: 10px;
 }
 
-.modal-body div p{
+/* .modal-body div p{
     text-align: center;
     font-family: 'Tajawal', sans-serif;
     font-weight: 600;
     color: #1F40B2;
     font-size: medium;
-}
+} */
 
 #logInForm label{
     color: black;
@@ -293,6 +333,8 @@ a{
 /* start navbar */
 .navbar{
     background-color: white;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .nav-cont{
@@ -336,6 +378,7 @@ a{
     color: #fff;
     padding-top: 22%;
     position: relative;
+    overflow: hidden;
 }
 
 .hero_section h1{
@@ -633,19 +676,19 @@ a{
 
 /* start dealer_offers */
 .dealer_offers{
-    padding: 25px 0px;
+    
 }
 /* End dealer_offers */
 
 /* start ads_section */
-
+.ads_section{
+    padding-bottom: 100px;
+}
 /* end ads_section */
 
 /* start profit_products */
 
-.profit_products{
-    padding: 50px 0px;
-}
+
 /* start profit_products */
 
 
@@ -689,7 +732,8 @@ a{
 
 /* end profile settings */
 
-/* start orders page */
+/*===========> [ start orders page ] <============================== */
+
 .box_input_order{
     border: 1px solid transparent;
     background-color: #fff;
@@ -722,8 +766,198 @@ a{
     width: 100% !important;
 }
 
+.container_list_of_orders{
 
-/* end orders page */
+}
+
+.container_list_of_orders .box_order_detailes{
+    margin-bottom: 24px;
+}
+
+.container_list_of_orders .box_order_detailes .order_header{
+    font-size: 16px;
+}   
+
+.container_list_of_orders .box_order_detailes .order_header .btn_status_success{
+    background-color: #CFF0EE;
+    color: green;
+    border: 1px solid #CFF0EE;
+    border-radius: 20px;
+    padding: 0px 10px;
+
+} 
+
+.container_list_of_orders .order_header .btn_status_danger{
+    background-color: tomato;
+    color: #fff;
+    border: 1px solid tomato;
+    border-radius: 20px;
+    padding: 0px 10px;
+} 
+
+.container_list_of_orders .box_btn_orders_mange button{
+    background-color: transparent;
+    border: 1px solid silver;
+    color: black;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 5px;
+    transition-duration: var(--main-duration);
+}
+
+.container_list_of_orders .box_btn_orders_mange button:hover{
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+    /* color: var(--main-color); */
+    color: #fff;
+    background-color: var(--main-color);
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+.container_list_of_orders  .box_btn_orders_mange .active {
+    background-color: transparent;
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+   
+}
+
+.rate_text{
+    font-size: 12px;
+}
+
+.manage_modal_rate img:hover{
+    background-color: var(--main-color-alt);
+    border-radius: 5px;
+}
+
+.manage_modal_rate .img_active{
+    background-color: var(--main-color-alt);
+    border-radius: 5px;
+}
+
+#order_tracking_modal .order_header{
+    font-size: 14px !important;
+}
+
+.tracking_box_status{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.tracking_box_status .icon i{
+    padding: 15px;
+    background-color: var(--main-color-alt);
+    font-size: 22px;
+    border-radius: 5px;
+    color: var(--main-color);
+}
+
+.tracking_box_status h5{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.tracking_box_status .time{
+    font-size: 12px;
+}
+
+.check_max_height{
+    height: 90% !important;
+    width: 1px;
+    border-right: 1px dotted silver;
+}
+
+
+
+.check_max_height .success{
+    padding: 15px;
+    background-color: rgb(233, 255, 233);
+    position: relative;
+    left: -20px;
+    margin-bottom: 40px;
+    color: green;
+}
+
+.check_max_height .danger{
+    padding: 15px;
+    background-color: rgb(255, 207, 217);
+    position: relative;
+    left: -20px;
+    margin-bottom: 40px;
+    color: red;
+}
+
+
+
+
+/* start chat */
+
+.box_messages{
+    height: 70vh;
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+
+.box_messages .send{
+    direction: ltr !important;
+}
+
+
+.box_messages .send img{
+    border: 1px solid silver;
+    width: 50px;
+    height: 50px;
+}
+
+.box_messages .send p{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.box_messages .recive{
+    direction: rtl !important;
+    
+}
+
+.box_messages .recive img{
+    border: 1px solid silver;
+    width: 50px;
+    height: 50px;
+}
+
+.box_messages .recive p{
+    background-color: var(--main-color-alt);
+    
+    padding: 8px;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.box_messages_footer {
+    padding-top: 16px;
+}
+
+.box_messages_footer i{
+    font-size: 25px;
+    margin: auto;
+}
+
+.box_messages_footer textarea{
+    
+}
+
+
+
+/* end chat */
+
+/*===========> [ end orders page ] <============================== */
 
 
 /* start wallet */
@@ -840,10 +1074,6 @@ a{
         font-size: 15px;
     }
 
-    body{
-        width: 100%;
-        margin-left: 15px;
-    }
 
 }
 
@@ -944,7 +1174,14 @@ a{
     color: black;
 }
 
+.dropdown_category{
+    border: 1px solid var(--secondary-color);
+    margin: auto;
+}
 
+.container_all_products h3{
+    font-size: 20px !important;
+}
 
 
 /*========> [ End all products ] <=============*/
@@ -1025,7 +1262,7 @@ a{
     font-size: 20px;
 }
 
-.dropdown{
+.navbar .dropdown{
     /* position: absolute;
     left: 125%; */
     width: 286px;
@@ -1092,10 +1329,12 @@ a{
 }
 
 @media only screen and (min-width: 768px) {
-    .dropdown{
+   .navbar .dropdown{
         position: absolute;
         left: 125%;
     }
 }
 /* End Navbar2 */
 /* end navbar */
+
+

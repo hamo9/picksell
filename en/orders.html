@@ -47,8 +47,8 @@
 <body>
 
 
-     <!-- navbar here -->
-     <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- navbar here -->
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid nav-cont">
             <img src="../assets/img/Logo1.png" alt="" width="165" height="60">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -209,13 +209,13 @@
     <!-- end navbar -->
 
 
-    <!-- start profile page -->
+    <!-- start orders page -->
     <section class="profile_setting" id="profile_setting">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
 
-                <div class="col-md-3 p-3 d-none d-md-block">
-                    <div class="card card-body card_profile_items shadow">
+                <div class="col-md-3 p-3 d-none d-md-block px-md-5">
+                    <div class="card card-body card_profile_items">
                         <div class="mb-2 ">
                             <h4> <img src="../assets/img/profile/account-desaturated.svg" alt="" width="45px"
                                     height="45px"> <span class="p-3">Account</span></h4>
@@ -246,7 +246,8 @@
                             <div class="col-6 col-md-7 mt-4">
                                 <div class="box_input_order">
                                     <i class="fas fa-search"></i>
-                                    <input type="text" name="" id="" placeholder="Search by customer name, order number, or customer phone number">
+                                    <input type="text" name="" id=""
+                                        placeholder="Search by customer name, order number, or customer phone number">
                                 </div>
 
                             </div>
@@ -296,11 +297,10 @@
                             </div>
 
                             <div class="col-6 col-md-3 mt-4 pt-3">
-                                <button class="btn btn_style">
+                                <button class="btn btn_second_color">
                                     search
                                 </button>
                             </div>
-
 
 
                         </div>
@@ -313,13 +313,1766 @@
                         <button class="Exchanges_Returns">Exchanges and Returns</button>
                     </div>
 
+                    <section class="container_list_of_orders my-4">
+
+                        <div id="all_orders">
+
+                            <!-- first order -->
+                            <div class="card box_order_detailes">
+                                <div class="card-header">
+                                    <div class="row">
+
+                                        <div class="col-6 order_header mb-2">
+                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            <!-- order status <button class="btn_status_danger ">canceled order</button> -->
+
+                                            order status <button class="btn_status_success ">Done order</button>
+
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            order date <strong class="p-1"> 28/6/2022</strong>
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            date confirem <strong class="p-1"> 28/6/2022</strong>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="row p-0">
+                                        <div class="col-md-9">
+
+                                            <table class="table table-bordered table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">client name</th>
+                                                        <th scope="col">phone</th>
+                                                        <th scope="col">Governorate</th>
+                                                        <th scope="col">Total amount</th>
+                                                        <th scope="col">win the order</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Hamda</th>
+                                                        <td>01029500566</td>
+                                                        <td>alex</td>
+                                                        <td>330</td>
+                                                        <td>480</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <table class="table table-bordered table-responsive mb-4">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Address</th>
+                                                        <th scope="col">Notes</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </td>
+                                                        <td>
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                        <div class="row col-md-3 box_btn_orders_mange m-auto m-md-0">
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12 active" data-bs-toggle="modal"
+                                                data-bs-target="#order_view_modal">show order</button>
+                                            </div>
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button data-bs-toggle="modal"
+                                                data-bs-target="#order_tracking_modal" class="col-12">order tracking</button>
+                                            </div>
+
+                                            <div data-bs-toggle="modal"
+                                            data-bs-target="#Track_shipment" class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12">Track the shipment</button>
+                                            </div>
+
+                                            <div data-bs-toggle="modal"
+                                            data-bs-target="#send_message_modal" class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12">Send message</button>
+                                            </div>
+
+                                            
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12" data-bs-toggle="modal"
+                                                    data-bs-target="#order_rate_modal">order rate</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!-- start Modal for rate order -->
+                                    <div class="modal fade" id="order_rate_modal" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen modal-fullscreen-rate m-auto">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Rate Order</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="">
+                                                        <div class="row text-center m-auto manage_modal_rate">
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img class="Not_completely_satisfied"
+                                                                    src="../assets/img/orders/rating-1.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">Not completely satisfied</h6>
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img class="very_satisfied"
+                                                                    src="../assets/img/orders/rating-2.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-3.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-4.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-5.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+                                                            </div>
+
+                                                            <select name="" id="select_rate"
+                                                                class="my_select mt-2 col-12 d-none">
+                                                                <option value="">product status</option>
+                                                                <option value="">prices</option>
+                                                                <option value="">Other</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-12 mt-4">
+                                                            <div class="m-auto text-center">
+                                                                <button type="button"
+                                                                    class="btn btn_second_color rounded-pill">confirm</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for rate order -->
+
+                                    <!-- start Modal for view order -->
+                                    <div class="modal fade" id="order_view_modal" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">View Order</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            client name <strong class="p-1">Hamda Shahat</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            phone <strong class="p-1">01029500566</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            <!-- order status <button class="btn_status_danger ">canceled order</button> -->
+
+                                                            order status <button class="btn_status_success ">success</button>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    <div>
+                                                        <button class="float-end btn btn-outline-dark rounded-pill" data-bs-toggle="modal"
+                                                        data-bs-target="#send_message_modal">send message</button>
+                                                        <h5> <img src="../assets/img/orders/prods-i.png" alt="" width="35px" height="35px"> products</h5>
+                                                    </div>
+
+                                                    <table class="table table-bordered table-responsive mt-4 mb-4">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>img</th>
+                                                                <th scope="col">product name</th>
+                                                                <th scope="col">count</th>
+                                                                <th scope="col">price</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="../assets/img/orders/rating-5.svg" alt="" width="100px" height="100px" class="rounded-pill">
+                                                                </td>
+                                                                <td>
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>480</td>
+
+                                                            </tr>
+        
+                                                        </tbody>
+                                                    </table>
+
+                                                    <p class="lead">
+                                                        If you encounter any problems, please; Wait until we reconsider your request, and you can also send a message to your business manager for help
+                                                    </p>
+
+                                                    
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for view -->
+
+                                    <!-- start Modal for tracking order -->
+                                    <div class="modal fade" id="order_tracking_modal" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">order tracking</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order date <strong class="p-1">26/6/2022</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            Confirmation date <strong class="p-1">26/6/2022</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            Expected delivery date<strong class="p-1">26/6/2022</strong>
+                                   
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    <div class="row">
+                                                        <div class="col-10">
+                                                            <!-- item [1] -->
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-rectangle-list"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Order done</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+                                                                </div>
+                                                                <div class="p-2">
+                                                                    <h5>Order confirmed</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="bi bi-clock-history"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Waiting for the shipping company</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-truck"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Delivery in progress</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-check-double"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Delivered</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-2">
+                                                           <div class="check_max_height">
+                                                                <div>
+                                                                    <!-- if you want to use [ x ] with red color use it -->
+                                                                    <!-- ==> [  <i class="fa-solid fa-xmark rounded-pill danger"></i> ] -->
+                                                                    <!-- else use it for green success -->
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for tracking -->
+
+                                    <!-- start Modal for Track shipment  -->
+                                    <div class="modal fade" id="Track_shipment" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Track the shipment</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            client name <strong class="p-1">Hamda Shahat</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            phone <strong class="p-1">01029500566</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            <!-- order status <button class="btn_status_danger ">canceled order</button> -->
+
+                                                            order status <button class="btn_status_success ">success</button>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    
+                                                    <table class="table table-bordered table-responsive mt-4 mb-4">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">date</th>
+                                                                <th scope="col">status</th>
+                                                                <th scope="col">reasone</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                              
+                                                                <td> 17/7/2022</td>
+                                                                <td>success</td>
+                                                                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                              
+                                                                <td> 17/7/2022</td>
+                                                                <td>success</td>
+                                                                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+
+                                                            </tr>
+                                                            
+        
+                                                        </tbody>
+                                                    </table>
+
+                                                    
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for Track shipment -->
+
+
+
+
+                                </div>
+                                <div class="card-header pt-4">
+                                    <h5>Is there a problem with your order?</h5>
+                                    <div class="row my-2">
+
+                                        <div class="col-6 col-md-3  m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#Product_replacement"  class="btn_second_color btn rounded-pill col-12">replace
+                                                product</button>
+                                        </div>
+                                        
+
+                                        <div class="col-6 col-md-3  m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#recovery_modal" class=" btn btn-dark rounded-pill col-12">recovery</button>
+                                        </div>
+
+                                        <div class="col-10 col-md-4 m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#Policy_modal" class="btn btn-outline-secondary col-12 rounded-pill">policy
+                                                recovery and replace</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div id="current_orders" class="d-none">
+                            <!-- first order -->
+                            <div class="card box_order_detailes">
+                                <div class="card-header">
+                                    <div class="row">
+
+                                        <div class="col-6 order_header mb-2">
+                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            order status <button class="btn_status_danger ">canceled order</button>
+
+                                            <!-- order status <button class="btn_status_success ">Done order</button> -->
+
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            order date <strong class="p-1"> 28/6/2022</strong>
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            date confirem <strong class="p-1"> 28/6/2022</strong>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="row p-0">
+                                        <div class="col-md-9">
+
+                                            <table class="table table-bordered table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">client name</th>
+                                                        <th scope="col">phone</th>
+                                                        <th scope="col">Governorate</th>
+                                                        <th scope="col">Total amount</th>
+                                                        <th scope="col">win the order</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Hamda</th>
+                                                        <td>01029500566</td>
+                                                        <td>alex</td>
+                                                        <td>330</td>
+                                                        <td>480</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <table class="table table-bordered table-responsive mb-4">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Address</th>
+                                                        <th scope="col">Notes</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </td>
+                                                        <td>
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                        <div class="row col-md-3 box_btn_orders_mange m-auto m-md-0">
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12 active" data-bs-toggle="modal"
+                                                data-bs-target="#order_view_modal1">show order</button>
+                                            </div>
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button data-bs-toggle="modal"
+                                                data-bs-target="#order_tracking_modal1" class="col-12">order tracking</button>
+                                            </div>
+
+                                            <div data-bs-toggle="modal"
+                                            data-bs-target="#Track_shipment1" class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12">Track the shipment</button>
+                                            </div>
+
+                                            <div data-bs-toggle="modal"
+                                            data-bs-target="#send_message_modal" class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12">Send message</button>
+                                            </div>
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12" data-bs-toggle="modal"
+                                                    data-bs-target="#order_rate_modal1">order rate</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!-- start Modal for rate order -->
+                                    <div class="modal fade" id="order_rate_modal1" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen modal-fullscreen-rate m-auto">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Rate Order</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="">
+                                                        <div class="row text-center m-auto manage_modal_rate">
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img class="Not_completely_satisfied"
+                                                                    src="../assets/img/orders/rating-1.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">Not completely satisfied</h6>
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img class="very_satisfied"
+                                                                    src="../assets/img/orders/rating-2.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-3.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-4.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-5.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+                                                            </div>
+
+                                                            <select name="" id="select_rate"
+                                                                class="my_select mt-2 col-12 d-none">
+                                                                <option value="">product status</option>
+                                                                <option value="">prices</option>
+                                                                <option value="">Other</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-12 mt-4">
+                                                            <div class="m-auto text-center">
+                                                                <button type="button"
+                                                                    class="btn btn_second_color rounded-pill">confirm</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for rate order -->
+
+                                    <!-- start Modal for view order -->
+                                    <div class="modal fade" id="order_view_modal1" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">View Order</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            client name <strong class="p-1">Hamda Shahat</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            phone <strong class="p-1">01029500566</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            <!-- order status <button class="btn_status_danger ">canceled order</button> -->
+
+                                                            order status <button class="btn_status_success ">success</button>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    <div>
+                                                        <button class="float-end btn btn-outline-dark rounded-pill">send message</button>
+                                                        <h5> <img src="../assets/img/orders/prods-i.png" alt="" width="35px" height="35px"> products</h5>
+                                                    </div>
+
+                                                    <table class="table table-bordered table-responsive mt-4 mb-4">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>img</th>
+                                                                <th scope="col">product name</th>
+                                                                <th scope="col">count</th>
+                                                                <th scope="col">price</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="../assets/img/orders/rating-5.svg" alt="" width="100px" height="100px" class="rounded-pill">
+                                                                </td>
+                                                                <td>
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>480</td>
+
+                                                            </tr>
+        
+                                                        </tbody>
+                                                    </table>
+
+                                                    <p class="lead">
+                                                        If you encounter any problems, please; Wait until we reconsider your request, and you can also send a message to your business manager for help
+                                                    </p>
+
+                                                    
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for view -->
+
+                                    <!-- start Modal for tracking order -->
+                                    <div class="modal fade" id="order_tracking_modal1" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">order tracking</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order date <strong class="p-1">26/6/2022</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            Confirmation date <strong class="p-1">26/6/2022</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            Expected delivery date<strong class="p-1">26/6/2022</strong>
+                                   
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    <div class="row">
+                                                        <div class="col-10">
+                                                            <!-- item [1] -->
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-rectangle-list"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Order done</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+                                                                </div>
+                                                                <div class="p-2">
+                                                                    <h5>Order confirmed</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="bi bi-clock-history"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Waiting for the shipping company</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-truck"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Delivery in progress</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-check-double"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Delivered</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-2">
+                                                           <div class="check_max_height">
+                                                                <div>
+                                                                    <!-- if you want to use [ x ] with red color use it -->
+                                                                    <!-- ==> [  <i class="fa-solid fa-xmark rounded-pill danger"></i> ] -->
+                                                                    <!-- else use it for green success -->
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for tracking -->
+
+                                    <!-- start Modal for Track shipment  -->
+                                    <div class="modal fade" id="Track_shipment1" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Track the shipment</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            client name <strong class="p-1">Hamda Shahat</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            phone <strong class="p-1">01029500566</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            <!-- order status <button class="btn_status_danger ">canceled order</button> -->
+
+                                                            order status <button class="btn_status_success ">success</button>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    
+                                                    <table class="table table-bordered table-responsive mt-4 mb-4">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">date</th>
+                                                                <th scope="col">status</th>
+                                                                <th scope="col">reasone</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                              
+                                                                <td> 17/7/2022</td>
+                                                                <td>success</td>
+                                                                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                              
+                                                                <td> 17/7/2022</td>
+                                                                <td>success</td>
+                                                                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+
+                                                            </tr>
+                                                            
+        
+                                                        </tbody>
+                                                    </table>
+
+                                                    
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for Track shipment -->
+
+
+
+
+                                </div>
+                                <!-- hide this item if order canceled -->
+                                <div class="card-header pt-4 d-none">
+                                    <h5>Is there a problem with your order?</h5>
+                                    <div class="row my-2">
+
+                                        <div class="col-6 col-md-3  m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#Product_replacement"  class="btn_second_color btn rounded-pill col-12">replace
+                                                product</button>
+                                        </div>
+                                        
+
+                                        <div class="col-6 col-md-3  m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#recovery_modal" class=" btn btn-dark rounded-pill col-12">recovery</button>
+                                        </div>
+
+                                        <div class="col-10 col-md-4 m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#Policy_modal" class="btn btn-outline-secondary col-12 rounded-pill">policy
+                                                recovery and replace</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="Previous_orders" class="d-none">
+                             <!-- first order -->
+                             <div class="card box_order_detailes">
+                                <div class="card-header">
+                                    <div class="row">
+
+                                        <div class="col-6 order_header mb-2">
+                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            <!-- order status <button class="btn_status_danger ">canceled order</button> -->
+
+                                            order status <button class="btn_status_success ">Done order</button>
+
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            order date <strong class="p-1"> 28/6/2022</strong>
+                                        </div>
+
+                                        <div class="col-6 order_header mb-2">
+                                            date confirem <strong class="p-1"> 28/6/2022</strong>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <div class="row p-0">
+                                        <div class="col-md-9">
+
+                                            <table class="table table-bordered table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">client name</th>
+                                                        <th scope="col">phone</th>
+                                                        <th scope="col">Governorate</th>
+                                                        <th scope="col">Total amount</th>
+                                                        <th scope="col">win the order</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Hamda</th>
+                                                        <td>01029500566</td>
+                                                        <td>alex</td>
+                                                        <td>330</td>
+                                                        <td>480</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                            <table class="table table-bordered table-responsive mb-4">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Address</th>
+                                                        <th scope="col">Notes</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </td>
+                                                        <td>
+                                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+
+                                        <div class="row col-md-3 box_btn_orders_mange m-auto m-md-0">
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12 active" data-bs-toggle="modal"
+                                                data-bs-target="#order_view_modal2">show order</button>
+                                            </div>
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button data-bs-toggle="modal"
+                                                data-bs-target="#order_tracking_modal2" class="col-12">order tracking</button>
+                                            </div>
+
+                                            <div data-bs-toggle="modal"
+                                            data-bs-target="#Track_shipment2" class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12">Track the shipment</button>
+                                            </div>
+
+                                            <div data-bs-toggle="modal"
+                                            data-bs-target="#send_message_modal" class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12">Send message</button>
+                                            </div>
+
+                                            
+
+                                            <div class="col-6 col-md-12 p-1 pt-0">
+                                                <button class="col-12" data-bs-toggle="modal"
+                                                    data-bs-target="#order_rate_modal2">order rate</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <!-- start Modal for rate order -->
+                                    <div class="modal fade" id="order_rate_modal2" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen modal-fullscreen-rate m-auto">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Rate Order</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form action="">
+                                                        <div class="row text-center m-auto manage_modal_rate">
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img class="Not_completely_satisfied"
+                                                                    src="../assets/img/orders/rating-1.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">Not completely satisfied</h6>
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img class="very_satisfied"
+                                                                    src="../assets/img/orders/rating-2.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-3.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-4.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+
+                                                            </div>
+
+                                                            <div class="col-2 text-center px-2 mx-auto">
+                                                                <img src="../assets/img/orders/rating-5.svg" alt=""
+                                                                    width="50px" height="50px">
+                                                                <h6 class="rate_text pt-1">very satisfied</h6>
+                                                            </div>
+
+                                                            <select name="" id="select_rate"
+                                                                class="my_select mt-2 col-12 d-none">
+                                                                <option value="">product status</option>
+                                                                <option value="">prices</option>
+                                                                <option value="">Other</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="col-12 mt-4">
+                                                            <div class="m-auto text-center">
+                                                                <button type="button"
+                                                                    class="btn btn_second_color rounded-pill">confirm</button>
+                                                            </div>
+                                                        </div>
+
+                                                    </form>
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for rate order -->
+
+                                    <!-- start Modal for view order -->
+                                    <div class="modal fade" id="order_view_modal2" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">View Order</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            client name <strong class="p-1">Hamda Shahat</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            phone <strong class="p-1">01029500566</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            <!-- order status <button class="btn_status_danger ">canceled order</button> -->
+
+                                                            order status <button class="btn_status_success ">success</button>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    <div>
+                                                        <button class="float-end btn btn-outline-dark rounded-pill">send message</button>
+                                                        <h5> <img src="../assets/img/orders/prods-i.png" alt="" width="35px" height="35px"> products</h5>
+                                                    </div>
+
+                                                    <table class="table table-bordered table-responsive mt-4 mb-4">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>img</th>
+                                                                <th scope="col">product name</th>
+                                                                <th scope="col">count</th>
+                                                                <th scope="col">price</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="../assets/img/orders/rating-5.svg" alt="" width="100px" height="100px" class="rounded-pill">
+                                                                </td>
+                                                                <td>
+                                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                </td>
+                                                                <td>5</td>
+                                                                <td>480</td>
+
+                                                            </tr>
+        
+                                                        </tbody>
+                                                    </table>
+
+                                                    <p class="lead">
+                                                        If you encounter any problems, please; Wait until we reconsider your request, and you can also send a message to your business manager for help
+                                                    </p>
+
+                                                    
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for view -->
+
+                                    <!-- start Modal for tracking order -->
+                                    <div class="modal fade" id="order_tracking_modal2" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">order tracking</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order date <strong class="p-1">26/6/2022</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            Confirmation date <strong class="p-1">26/6/2022</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            Expected delivery date<strong class="p-1">26/6/2022</strong>
+                                   
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    <div class="row">
+                                                        <div class="col-10">
+                                                            <!-- item [1] -->
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-rectangle-list"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Order done</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-circle-check"></i>
+                                                                </div>
+                                                                <div class="p-2">
+                                                                    <h5>Order confirmed</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="bi bi-clock-history"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Waiting for the shipping company</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-truck"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Delivery in progress</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="tracking_box_status">
+                                                                <div class="icon p-2">
+                                                                    <i class="fa-solid fa-check-double"></i>
+                                                                </div>
+                                                                <div class="p-2">   
+                                                                    <h5>Delivered</h5>
+                                                                    <div class="text-black-50 time">09/06/2022, 10:29 PM</div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="col-2">
+                                                           <div class="check_max_height">
+                                                                <div>
+                                                                    <!-- if you want to use [ x ] with red color use it -->
+                                                                    <!-- ==> [  <i class="fa-solid fa-xmark rounded-pill danger"></i> ] -->
+                                                                    <!-- else use it for green success -->
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                                <div>
+                                                                    <i class="fa-solid fa-check rounded-pill success"></i>
+                                                                </div>
+                                                           </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for tracking -->
+
+                                    <!-- start Modal for Track shipment  -->
+                                    <div class="modal fade" id="Track_shipment2" data-bs-backdrop="static"
+                                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="staticBackdropLabel">Track the shipment</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                     <div class="row">
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            order code <strong class="p-1"> 44725/5835809</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            client name <strong class="p-1">Hamda Shahat</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            phone <strong class="p-1">01029500566</strong>
+                                                        </div>
+
+                                                        <div class="col-6 col-md-3 order_header mb-2">
+                                                            <!-- order status <button class="btn_status_danger ">canceled order</button> -->
+
+                                                            order status <button class="btn_status_success ">success</button>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                    <hr>
+
+                                                    
+                                                    <table class="table table-bordered table-responsive mt-4 mb-4">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">date</th>
+                                                                <th scope="col">status</th>
+                                                                <th scope="col">reasone</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                              
+                                                                <td> 17/7/2022</td>
+                                                                <td>success</td>
+                                                                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                              
+                                                                <td> 17/7/2022</td>
+                                                                <td>success</td>
+                                                                <td> Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+
+                                                            </tr>
+                                                            
+        
+                                                        </tbody>
+                                                    </table>
+
+                                                    
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end Modal for Track shipment -->
+
+                                </div>
+                                <div class="card-header pt-4">
+                                    <h5>Is there a problem with your order?</h5>
+                                    <div class="row my-2">
+
+                                        <div class="col-6 col-md-3  m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#Product_replacement"  class="btn_second_color btn rounded-pill col-12">replace
+                                                product</button>
+                                        </div>
+                                        
+
+                                        <div class="col-6 col-md-3  m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#recovery_modal" class=" btn btn-dark rounded-pill col-12">recovery</button>
+                                        </div>
+
+                                        <div class="col-10 col-md-4 m-auto py-2">
+                                            <button data-bs-toggle="modal" data-bs-target="#Policy_modal" class="btn btn-outline-secondary col-12 rounded-pill">policy
+                                                recovery and replace</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="Exchanges_Returns" class="d-none">
+                           <h6>coming soon</h6>
+                        </div>
+
+
+                    </section>
+
                 </div>
 
             </div>
 
         </div>
     </section>
-    <!-- end profile page -->
+    <!-- end orders page -->
+
+     <!-- start modal for Send message -->
+     <div class="modal fade" id="send_message_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-primary" id="staticBackdropLabel">send message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="box_messages p-md-2">
+                    <div class="send">
+                        <div class="row">
+                            <div class="col-2 col-md-1">
+                                <img src="../assets/img/how-order.svg" alt="" class="rounded-pill">
+                            </div>
+                            <div class="col-9">
+                                <p class="lead">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eos cum reiciendis blanditiis libero! Neque, maxime? Eum dignissimos qui, assumenda laudantium autem officiis fugit neque, error porro nisi illo non?
+                                </p>
+                            </div>
+                           
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 col-md-1">
+                                <img src="../assets/img/how-order.svg" alt="" class="rounded-pill">
+                            </div>
+                            <div class="col-9">
+                                <p class="lead">
+                                    Lorem ipsum, dolor sit amet
+                                </p>
+                            </div>
+                           
+                        </div>
+
+
+                    </div>
+                    <div class="recive">
+                        <div class="row">
+                            <div class="col-2 col-md-1">
+                                <img src="../assets/img/how-order.svg" alt="" class="rounded-pill">
+                            </div>
+                            <div class="col-9">
+                                <p class="lead">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eos cum reiciendis blanditiis libero! Neque, maxime? Eum dignissimos qui, assumenda laudantium autem officiis fugit neque, error porro nisi illo non?
+                                </p>
+                            </div>
+                           
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 col-md-1">
+                                <img src="../assets/img/how-order.svg" alt="" class="rounded-pill">
+                            </div>
+                            <div class="col-9">
+                                <p class="lead">
+                                    Lorem ipsum, dolor sit amet
+                                </p>
+                            </div>
+                           
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="model-footer box_messages_footer">
+                    <div class="row">
+                        <div class="col-1 text-center">
+                            <i class="bi bi-send"></i>
+                        </div>
+                        
+
+                        <div class="col-10">
+                            <textarea name="" id="" cols="30" rows="1" class="form-control rounded-pill"></textarea>
+                        </div>
+                        <div class="col-1 text-center">
+                            <i class="bi bi-paperclip"></i>
+                        </div>
+
+                      
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <!-- End modal for Send message -->
+
+
+    <!-- ========================> [ start globale modal ] <======================== -->
+
+    <!-- start mode for Return, Exchange and Completion Policy -->
+    <div class="modal fade" id="Policy_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-primary" id="staticBackdropLabel">Exchange and Completion Policy</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p class="lead">
+                The merchant submits a request for replacement, retrieval or completion to a merchant company in the event that the final customer has a complaint about the product, by opening the site, logging in to the account, accessing the request, and then pressing the replace, retrieval or completion button, and the request is answered within 24 hours a job
+                </p>
+                <p class="lead">
+                In the case of approval, the representative will reach the customer within 3-5 working days, and in case of rejection, the reason for rejection will be written in the tracking of the request
+                </p>
+                <p class="lead">
+                In the event of a return, the amount will be transferred to the cash number shown in the order 72 hours after the product reaches the stores in order to inspect the product and confirm its condition, in the event that there is no defect or problem with the product, 30% of the paid value will be deducted
+                </p>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <!-- End mode for Return, Exchange and Completion Policy -->
+
+     <!-- start mode for  Product replacement-->
+     <div class="modal fade" id="Product_replacement" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog " style="height: auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title text-primary" id="staticBackdropLabel">Product replacement</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <label class="pb-1" for="">choose product</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">product one</option>
+                                <option value="">product tow</option>
+                                <option value="">product three</option>
+                            </select>
+                            
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label class="pb-1" for="">select count</label>
+                            <input class="form-control" type="text" name="" id="" >
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="pb-1" for="">Choose the reason for requesting a replacement</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Choose one</option>
+                                <option value="">Choose tow</option>
+                                <option value="">Choose three</option>
+                            </select>
+                            
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="pb-1" for="">Please upload a video that demonstrates the problem in action</label>
+                            <input class="form-control" type="file" name="" id="" >
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="pb-1" for="">Please upload a picture of the bill of lading / a picture of the bar code on the product</label>
+                            <input class="form-control" type="file" name="" id="" >
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="pb-2" for="">Add any notes to clarify the problem</label>
+                            <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+
+                        <div class="my-4 text-center">
+                            <button class="btn btn_second_color rounded-pill m-auto">Send request</button>
+                        </div>
+
+                    </div>
+                  </form>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- End mode for Product replacement -->
+
+    <!-- start mode for recovery-->
+    <div class="modal fade" id="recovery_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen m-auto" style="height: auto;">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title text-primary" id="staticBackdropLabel">recovery</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="pb-1" for="">choose product</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">product one</option>
+                                <option value="">product tow</option>
+                                <option value="">product three</option>
+                            </select>
+                            
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="pb-1" for="">select count</label>
+                            <input class="form-control" type="number" name="" id="" >
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label class="pb-1" for="">Choose the reason for requesting a replacement</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Choose one</option>
+                                <option value="">Choose tow</option>
+                                <option value="">Choose three</option>
+                            </select>
+                            
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="pb-1" for="">Please upload a video that demonstrates the problem in action</label>
+                            <input class="form-control" type="file" name="" id="" >
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="pb-1" for="">Please upload a picture of the bill of lading / a picture of the bar code on the product</label>
+                            <input class="form-control" type="file" name="" id="" >
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="pb-1" for="">Type the number you want to transfer to (Vodafone, Orange, Etisalat Cash)</label>
+                            <input class="form-control" type="text" name="" id="" >
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label class="pb-2" for="">Add any notes to clarify the problem</label>
+                            <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                        </div>
+
+                        <div class="my-4 text-center">
+                            <button class="btn btn_second_color rounded-pill m-auto">Send request</button>
+                        </div>
+
+                    </div>
+                  </form>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <!-- End mode for recovery -->
+
+    <!-- ========================> [ End globale modal ] <======================== -->
 
 
 
@@ -367,12 +2120,6 @@
     <!-- End footer -->
 
 
-    </section>
-
-
-
-
-
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
@@ -386,19 +2133,46 @@
         $(document).ready(function () {
             $('.all_orders').click(function () {
                 $(this).addClass('active').siblings().removeClass('active');
+                $('#all_orders').removeClass('d-none').siblings().addClass('d-none');
             });
 
             $('.current_orders').click(function () {
                 $(this).addClass('active').siblings().removeClass('active');
+                $('#current_orders').removeClass('d-none').siblings().addClass('d-none');
+
             });
 
             $('.Previous_orders').click(function () {
                 $(this).addClass('active').siblings().removeClass('active');
+                $('#Previous_orders').removeClass('d-none').siblings().addClass('d-none');
+
             });
 
             $('.Exchanges_Returns').click(function () {
                 $(this).addClass('active').siblings().removeClass('active');
+                $('#Exchanges_Returns').removeClass('d-none').siblings().addClass('d-none');
+
             });
+
+            // ==========================================
+
+            $('.Not_completely_satisfied').click(function () {
+                $('#select_rate').removeClass('d-none');
+            });
+
+            $('.very_satisfied').click(function () {
+                $('#select_rate').removeClass('d-none');
+            });
+
+            $('.manage_modal_rate img').click(function () {
+                $('.manage_modal_rate img').removeClass('img_active');
+                $(this).addClass('img_active');
+            });
+
+
+
+
+
 
 
         });
