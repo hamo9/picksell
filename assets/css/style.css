@@ -505,6 +505,7 @@ a{
     right: 0px;
     border-radius: 8px;
     text-align: left;
+    z-index: 100;
 }
 
 .container_drop_noti {
@@ -516,6 +517,8 @@ a{
     right: 0px;
     border-radius: 8px;
     text-align: left;
+    z-index: 100;
+
 }
 
 .container_drop_noti .card-body{
@@ -867,7 +870,9 @@ a{
 /* end ads_section */
 
 /* start profit_products */
-
+.products_slider ,.all_products_page{
+    margin-top: 90px;
+}
 
 /* start profit_products */
 
@@ -880,7 +885,7 @@ a{
 /* start profile settings */
 .profile_setting{
     padding: 50px 0px;
-
+    margin-top: 70px;
 }
 
 .profile_setting .card_profile_items{
