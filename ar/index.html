@@ -31,6 +31,14 @@
     <!-- style for responsive pages -->
     <link rel="stylesheet" href="../assets/css/responsive.css">
 
+    <!-- style for animation css -->
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+            
     <!-- jquery script -->
     <script src="../assets/js/jquery.min.js"></script>
 
@@ -43,151 +51,94 @@
     <!-- start hero section -->
     <section id="hero">
 
-        <!-- start navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid nav-cont">
-                <a class="navbar-brand" href="#">
-                    <img src="../assets/img/Logo1.png" alt="" width="165" height="60">
+          <!-- ===> [ Start navbar ] <================== -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_home">
+            <div class="container">
+
+                <a class="navbar-brand logo_home" href="#">
+                    <img src="../assets/img/Logo1.png" alt="" class="d-inline-block align-text-top">
+
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
                         <li class="nav-item">
-                            <a class="nav-link p-lg-3" aria-current="page" href="#"><strong>Why Picksell</strong></a>
+                            <a class="nav-link" href="#entro_section">لماذا بيكسل</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link p-lg-3" href="#"><strong>How does the site work?</strong></a>
+                            <a class="nav-link" href="#steps_section">كيف يعمل الموقع؟</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link p-lg-3" href="#"><strong>Users' opinions</strong></a>
+                            <a class="nav-link" href="#users_opinion_section">آراء المستخدمين</a>
                         </li>
+
                     </ul>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-warning submit-btn" type="button" data-bs-toggle="modal"
-                            data-bs-target="#logIn_Modal"><strong>LogIn</strong></button>
-                        <button class="btn btn-outline-warning submit-btn" type="button" data-bs-toggle="modal"
-                            data-bs-target="#signUp_Modal"
-                            style="background-color:#F4C80E;"><strong>SignUp</strong></button>
-                    </form>
+
+                    <div class="d-flex nav_box_btn">
+                        <a href="login.html">
+                            <button class="btn rounded-pill  mx-1 login_btn">تسجيل دخول</button>
+                        </a>
+                        <a href="register.html">
+                            <button class="btn rounded-pill  mx-1 register_btn">إنشاء حساب </button>
+                        </a>
+                       
+                    </div>
+
                 </div>
             </div>
         </nav>
+        <!-- start dropdown for mobile -->
+        <div class="offcanvas offcanvas-start nav_for_mobil" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
 
-        <!-- Start LogIn Modal -->
-        <div class="modal fade" id="logIn_Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div style="width: 100%;">
-                            <h5 class="modal-title" id="staticBackdropLabel1"><strong>LogIn To Your Account</strong>
-                            </h5>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="logo_home_mobile">
+                        <img src="../assets/img/Logo1.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">
                     </div>
-                    <div class="modal-body">
-                        <div class="modal_para">
-                            <p>You are at the beginning of the road to achieving your dream and you can now see the
-                                products and start selling what suits you and achieve many profits and successes</p>
-                        </div>
-                        <form id="logInForm" action="/">
-                            <label class="form-label">Mobile Number or Email</label>
-                            <input type="text" name="Email Or Phone" class="form-control"
-                                placeholder="Enter Your Mobile Number or Email">
-                            <br>
-                            <label class="form-label">Password</label>
-                            <input type="password" name="password" class="form-control"
-                                placeholder="Enter Your Password">
-                            <div style="width: 100%;">
-                                <button type="submit" class="btn btn-outline-warning"><strong>LogIn</strong></button>
-                            </div>
-                        </form>
-                        <div style="width: 100%;">
-                            <button type="button" class="btn btn-outline-warning logWithGoogle"><strong>LogIn With
-                                    Google</strong></button>
-                        </div>
-                        <br>
-                        <p style="display: inline;">Forget Password?</p>
-                        <a href="#" style="text-align: right;"> Click Here</a>
-                        <br>
-                        <p style="display: inline;">Don't have an account?</p>
-                        <a href="#" style="text-align: right;"> Create New Account</a>
-                    </div>
+
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="mt-3 login_row">
+                    <a href="#">تسجيل دخول</a>
                 </div>
+
+                <div class="mt-3 register_row">
+                    <a href="#">انشاء حساب جديد</a>
+                </div>
+
             </div>
         </div>
-        <!--End LogIn Modal -->
+        <!-- end dropdown for mobile -->
 
-        <!-- Start SignUp Modal -->
-        <div class="modal fade" id="signUp_Modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel2" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div style="width: 100%;">
-                            <h5 class="modal-title" id="staticBackdropLabel2"><strong>Create New Account</strong></h5>
-                        </div>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="modal_para">
-                            <p>You are at the beginning of the road to achieving your dream and you can now see the
-                                products and start selling what suits you and achieve many profits and successes</p>
-                        </div>
-                        <form id="signUpForm" action="/">
-                            <label class="form-label">Full Name</label>
-                            <input type="text" name="name" class="form-control" placeholder="Enter Your Full Name">
-
-                            <label class="form-label">Email</label>
-                            <input type="email" name="Email Or Phone" class="form-control" placeholder="Enter Email">
-
-                            <label class="form-label">Mobile Number</label>
-                            <input type="tel" name="phone" class="form-control" placeholder="Enter Mobile Number">
-
-                            <label class="form-label">Password</label>
-                            <input type="password" name="password" class="form-control"
-                                placeholder="Enter Your Password">
-
-                            <label class="form-label">Confirm Password</label>
-                            <input type="password" name="password" class="form-control" placeholder="Confirm Password">
-
-                            <label class="form-label">Referral code(not required)</label>
-                            <input type="text" name="ReferralCode" class="form-control"
-                                placeholder="Enter Referral Code">
-                            <button type="button" class="btn btn-outline-warning"><strong>SignUp</strong></button>
-                        </form>
-                        <div style="width: 100%;">
-                            <button type="button" class="btn btn-outline-warning signWithGoogle"><strong>SignUp with
-                                    Google</strong></button>
-                        </div>
-                        <br>
-                        <p style="display: inline;">Forget Password?</p>
-                        <a href="#" style="text-align: right;"> Click Here</a>
-                        <br>
-                        <p style="display: inline;">Already have an account?</p>
-                        <a href="#" style="text-align: right;"> LogIn</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--End SignUp Modal -->
-
-        <!-- End navbar -->
+        <!-- ===> [ End navbar ] <================== -->
 
         <div class="hero_section">
+            <div class="hero_square_one"></div>
+            <div class="hero_square_tow"></div>
             <div class="container col-md-7 m-auto">
-                <h1>
+                <h1 class="wow animate__backInDown">
                     حقق حلمك وابدأ تجارتك
                 </h1>
-                <p class="lead">
+                <p class="lead wow animate__backInDown">
                     اشتغل وزوّد دخلك وانت قاعد في مكانك
                     بدون أي عمولة صافي ربحك بالكامل في محفظتك
                 </p>
-                <button class="rounded-pill">ابدأ الان</button>
+                <button class="rounded-pill wow animate__pulse infinite btn_get_start">ابدأ الان</button>
             </div>
 
 
@@ -477,6 +428,11 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
+       <!-- script for animation on page -->
+       <script src="../assets/js/wow.min.js"></script>
+       <script>
+           new WOW().init();
+       </script>
 
 </body>
 
