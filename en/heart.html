@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Picksell | profile</title>
+    <title>Picksell | heart</title>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -145,12 +145,14 @@
                 </div>
             </div>
 
-            <a href="heart.html" class="position-relative d-lg-none">
-                <i class="fa-solid fa-heart fs-3 mt-2"></i>
-                <span class="position-absolute top-1  translate-middle badge rounded-pill bg-warning">
-                    3+
-                </span>
-            </a>
+            <div class="position-relative d-lg-none">
+                <a href="heart.html">
+                    <i class="fa-solid fa-heart fs-3 mt-2"></i>
+                    <span class="position-absolute top-1  translate-middle badge rounded-pill bg-warning">
+                        3+
+                    </span>
+                </a>
+            </div>
 
             <div class="position-relative d-lg-none">
                 <i class="fa-solid fa-cart-shopping fs-3 mt-2"></i>
@@ -187,7 +189,7 @@
                         </span>
                     </li>
 
-                    <li class="nav-link position-relative col-2">
+                    <li class="nav-link position-relative  col-2">
                         <a href="heart.html">
                             <i class="fa-solid fa-heart"></i>
                             <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning">
@@ -639,270 +641,299 @@
 
     <!-- ===> [ End navbar ] <================== -->
 
-    <!-- start profile page -->
-    <section class="profile_setting" id="profile_setting">
+
+    <section class="heart_section mt-5">
         <div class="container">
-            <div class="row">
+            <h1 class="h4">Product Catalog <span class="text-black-50">(1 product)</span></h1>
+            
+            <!-- table for desktop only -->
+            <div class="d-none d-lg-block">
+                <div class="card card-body mt-3">
+                    <table class="table table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">the product</th>
+                                <th scope="col">price</th>
+                                <th scope="col">profit</th>
+                                <th scope="col">Product availability</th>
+                                <th scope="col">Manage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="d-flex">
+                                        <img class="hover_img rounded" src="../assets/img/eldokan.png" width="100px"
+                                            height="100px" alt="">
+                                        <div class="px-3">
+                                            <h2 class="h5">product name here</h2>
+                                            <p class="small">original price : <strong>300 Eg</strong></p>
+                                        </div>
+                                    </div>
 
-                <div class="col-lg-3 p-3 d-none d-lg-block">
-                    <div class="card card-body card_profile_items">
-                        <a href="profile.html" class="mb-2 active">
-                            <h4> <img src="../assets/img/profile/account-desaturated.svg" alt="" width="45px"
-                                    height="45px"> <span class="p-3">Account</span></h4>
-                        </a>
-                        <a href="wallet.html" class="mb-2">
-                            <h4> <img src="../assets/img/profile/wallet-desaturated.svg" alt="" width="45px"
-                                    height="45px"><span class="p-3">Wallet</span></h4>
-                        </a>
-                        <a href="orders.html" class="mb-2">
-                            <h4> <img src="../assets/img/profile/orders-desaturated.svg" alt="" width="45px"
-                                    height="45px"><span class="p-3">Orders</span></h4>
-                        </a>
-                        <div class="mb-2">
-                            <h4> <img src="../assets/img/profile/logout-desaturated.svg" alt="" width="45px"
-                                    height="45px"><span class="p-3">Logout</span> </h4>
-                        </div>
-                    </div>
+                                </th>
+                                <td>
+                                    <div class="box_for_price_heart">
+                                        <input type="text" name="" id="" value="200">
+                                        <button><i class="fas fa-edit"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong class="text_main_color">40</strong>
+                                </td>
+                                <td>
+                                    <p class="success">available</p>
+                                    <!-- <p class="danger">un available</p> -->
+                                </td>
+                                <td class="table_heart_manage">
+                                    <div>
+                                        <button class="btn rounded-pill btn-outline-primary mb-2 col-12">Add to
+                                            cart</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn rounded-pill btn-outline-dark mb-2 col-12">order Now</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn rounded-pill  btn-outline-danger col-12">Remove</button>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <div class="d-flex">
+                                        <img class="hover_img rounded" src="../assets/img/eldokan.png" width="100px"
+                                            height="100px" alt="">
+                                        <div class="px-3">
+                                            <h2 class="h5">product name here</h2>
+                                            <p class="small">original price : <strong>300 Eg</strong></p>
+                                        </div>
+                                    </div>
+
+                                </th>
+                                <td>
+                                    <div class="box_for_price_heart">
+                                        <input type="text" name="" id="" value="200">
+                                        <button><i class="fas fa-edit"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong class="text_main_color">40</strong>
+                                </td>
+                                <td>
+                                    <p class="success">available</p>
+                                    <!-- <p class="danger">un available</p> -->
+                                </td>
+                                <td class="table_heart_manage">
+                                    <div>
+                                        <button class="btn rounded-pill btn-outline-primary mb-2 col-12">Add to
+                                            cart</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn rounded-pill btn-outline-dark mb-2 col-12">order Now</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn rounded-pill  btn-outline-danger col-12">Remove</button>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                    <div class="d-flex">
+                                        <img class="hover_img rounded" src="../assets/img/eldokan.png" width="100px"
+                                            height="100px" alt="">
+                                        <div class="px-3">
+                                            <h2 class="h5">product name here</h2>
+                                            <p class="small">original price : <strong>300 Eg</strong></p>
+                                        </div>
+                                    </div>
+
+                                </th>
+                                <td>
+                                    <div class="box_for_price_heart">
+                                        <input type="text" name="" id="" value="200">
+                                        <button><i class="fas fa-edit"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <strong class="text_main_color">40</strong>
+                                </td>
+                                <td>
+                                    <p class="success">available</p>
+                                    <!-- <p class="danger">un available</p> -->
+                                </td>
+                                <td class="table_heart_manage">
+                                    <div>
+                                        <button class="btn rounded-pill btn-outline-primary mb-2 col-12">Add to
+                                            cart</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn rounded-pill btn-outline-dark mb-2 col-12">order Now</button>
+                                    </div>
+                                    <div>
+                                        <button class="btn rounded-pill  btn-outline-danger col-12">Remove</button>
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
                 </div>
-                <div class="col-lg-9 px-md-5">
-
-                    <h1>account setting</h1>
-                    <div class="choose_setting">
-
-                        <button class="personal_information active">personal information</button>
-                        <button class="change_password">change password</button>
-                        <button class="Referred_accounts">Referred accounts</button>
-
-                    </div>
 
 
-                    <!-- globale div on setting -->
-                    <!-- link ref here -->
-                    <input type="text" name="" id="copyTargetCode" value="46ca5869b0110508">
-
-                    <div class="card card-body">
-                        <div>
-                            <button class="btn btn-primary float-end">blue status</button>
-
-                            <img src="../assets/img/eldokan.png" alt="" width="80px" height="80px" class="mb-2 rounded">
-                            <div>
-                                <h5>Name here</h5>
-
-                                <p class="lead text-black-50">
-                                    Referral Code <span class="p-1">46ca5869b0110508</span>
-                                    <i class="fa fa-copy p-2" id="copyButtonCode"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- End globale div on setting -->
-
-
-
-                    <div class="box_sections_settings">
-
-
-                        <!-- start personal information tap  -->
-                        <div id="personal_information">
-
-
-                            <div class="card mt-4">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="px-1">
-                                            <img src="../assets/img/profile/personal-i.png" alt="" width="70px"
-                                                height="70px">
-
-                                        </div>
-                                        <div class="px-1 pt-1">
-                                            <h4> personal information</h4>
-                                            <p class="lead text-black-50">You can modify your personal information and
-                                                some
-                                                settings</p>
-
-                                        </div>
-
-                                    </div>
-                                    <hr>
-                                    <form action="">
-                                        <div class="row">
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Merchant code</label>
-                                                <input disabled type="text" name="" id="" class="form-control"
-                                                    value="123456">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Username</label>
-                                                <input disabled type="text" name="" id="" class="form-control"
-                                                    value="hamada">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">First name</label>
-                                                <input type="text" name="" id="" class="form-control" value="hamada">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Last name</label>
-                                                <input type="text" name="" id="" class="form-control" value="hamada">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Phone</label>
-                                                <input type="tel" name="" id="" class="form-control" value="hamada">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Email</label>
-                                                <input type="email" name="" id="" class="form-control" value="hamada">
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-
-                                            <div class="col-md-6 mt-3 text-center">
-                                                <img src="../assets/img/how-create.svg" width="300px" height="300px"
-                                                    class="rounded-pill m-auto" alt="">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3 mt-md-5 pt-md-5">
-                                                <label class="mb-2" for="">img</label>
-                                                <input type="file" name="" id="" class="form-control">
-                                            </div>
-
-                                        </div>
-                                        <div class="text-center mt-5">
-                                            <button class="btn custom_btn rounded-pill shadow">Update
-                                                Information</button>
-                                        </div>
-                                    </form>
-
-
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!-- end  personal information tap  -->
-
-                        <!-- start change_password -->
-                        <div id="change_password">
-
-                            <div class="card mt-4">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="px-1">
-                                            <img src="../assets/img/profile/password-i.png" alt="" width="70px"
-                                                height="70px">
-
-                                        </div>
-                                        <div class="px-1 pt-1">
-                                            <h4>change password</h4>
-                                            <p class="lead text-black-50">You can change the password from here</p>
-
-                                        </div>
-
-                                    </div>
-                                    <hr>
-                                    <form action="">
-                                        <div class="row">
-
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">Old password</label>
-                                                <input type="password" name="" id="" class="form-control">
-                                            </div>
-                                            <div class="col-12"></div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">New password</label>
-                                                <input type="text" name="" id="" class="form-control">
-                                            </div>
-
-                                            <div class="col-md-6 mt-3">
-                                                <label class="mb-2" for="">confirm new password</label>
-                                                <input type="text" name="" id="" class="form-control">
-                                            </div>
-
-                                        </div>
-
-                                        <div class="text-center mt-5">
-                                            <button class="btn custom_btn rounded-pill shadow">Update
-                                                Information</button>
-                                        </div>
-                                    </form>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- End change_password -->
-
-                        <!-- start Referred_accounts -->
-                        <div id="Referred_accounts">
-
-
-                            <div class="card mt-4">
-                                <div class="card-body">
-                                    <div class="d-flex">
-                                        <div class="px-1">
-                                            <img src="../assets/img/profile/referrals-i.png" alt="" width="70px"
-                                                height="70px">
-
-                                        </div>
-                                        <div class="px-1 pt-1">
-                                            <h4>Referred accounts</h4>
-                                            <p class="lead text-black-50">You can modify your personal information and
-                                                some settings</p>
-                                        </div>
-
-                                    </div>
-                                    <hr>
-
-                                    <div class="row mt-4">
-                                        <div class="col-6">
-                                            <div class="card card-body bg-color">
-                                                <h4>Count Orders</h4>
-                                                <h5 class="my-5  text-center">4</h5>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-6">
-                                            <div class="card card-body bg-color">
-                                                <h4>Count accounts</h4>
-                                                <h5 class="my-5  text-center">9</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="text-center my-4">
-                                    <input type="text" id="copyTarget"
-                                        value="https://picksell.com/register/46ca5869b0110508">
-
-                                    <br>
-                                    <button id="copyButton" class="btn custom_btn rounded-pill shadow"> referral link <i
-                                            class="fas fa-copy"></i></button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- End Referred_accounts -->
-
-                    </div>
-
-
-                </div>
 
             </div>
 
+            <!-- for mobile Only -->
+            <div class="d-lg-none">
+                <div class="card card-body mb-3">
+                    
+                    <div class="d-flex">
+                        <img class="hover_img rounded" src="../assets/img/eldokan.png" width="100px" height="100px" alt="">
+                        <div class="px-3">
+                            <h2 class="h5">product name </h2>
+                            <p class="small">original price : <strong>300 Eg</strong></p>
+                            <p class="success ">available</p>
+                        </div>
+                        
+                    </div>
+                   
+    
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex mt-3">
+                                <p class="px-2 h5">price</p>
+                                <div class="box_for_price_heart">
+                                    <input type="text" name="" id="" value="200">
+                                    <button><i class="fas fa-edit"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex mt-3">
+                                <p class="lead h5">profit : <span class="text_main_color">40 Eg</span> </p>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row mt-4 text-center" >
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill btn-outline-primary mb-2">Add to cart</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill btn-outline-dark mb-2">order Now</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill  btn-outline-danger mb-2 ">Remove</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+               
+                <div class="card card-body mb-3">
+                    
+                    <div class="d-flex">
+                        <img class="hover_img rounded" src="../assets/img/eldokan.png" width="100px" height="100px" alt="">
+                        <div class="px-3">
+                            <h2 class="h5">product name </h2>
+                            <p class="small">original price : <strong>300 Eg</strong></p>
+                            <p class="success ">available</p>
+                        </div>
+                        
+                    </div>
+                   
+    
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex mt-3">
+                                <p class="px-2 h5">price</p>
+                                <div class="box_for_price_heart">
+                                    <input type="text" name="" id="" value="200">
+                                    <button><i class="fas fa-edit"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex mt-3">
+                                <p class="lead h5">profit : <span class="text_main_color">40 Eg</span> </p>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row mt-4 text-center" >
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill btn-outline-primary mb-2">Add to cart</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill btn-outline-dark mb-2">order Now</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill  btn-outline-danger mb-2 ">Remove</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+                <div class="card card-body mb-3">
+                    
+                    <div class="d-flex">
+                        <img class="hover_img rounded" src="../assets/img/eldokan.png" width="100px" height="100px" alt="">
+                        <div class="px-3">
+                            <h2 class="h5">product name </h2>
+                            <p class="small">original price : <strong>300 Eg</strong></p>
+                            <p class="success ">available</p>
+                        </div>
+                        
+                    </div>
+                   
+    
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="d-flex mt-3">
+                                <p class="px-2 h5">price</p>
+                                <div class="box_for_price_heart">
+                                    <input type="text" name="" id="" value="200">
+                                    <button><i class="fas fa-edit"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex mt-3">
+                                <p class="lead h5">profit : <span class="text_main_color">40 Eg</span> </p>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="row mt-4 text-center" >
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill btn-outline-primary mb-2">Add to cart</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill btn-outline-dark mb-2">order Now</button>
+                        </div>
+                        <div class="col-4">
+                            <button class="col-12 btn rounded-pill  btn-outline-danger mb-2 ">Remove</button>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
         </div>
+
     </section>
-    <!-- end profile page -->
 
 
     <!-- start footer -->
@@ -948,9 +979,7 @@
     </section>
     <!-- End footer -->
 
-
     </section>
-
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>

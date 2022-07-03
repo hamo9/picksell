@@ -1,3 +1,7 @@
+body{
+    font-family: 'Tajawal', sans-serif !important;
+}
+
 .hero_section h1{
     font-size: 45px;
 }
@@ -15,14 +19,13 @@
 
 .entro_section h2{
     padding-bottom: 20px;
- }
+}
 
- .entro_section p{
+.entro_section p{
     line-height: 2;
     font-size: 22px;
- }
+}
 
- 
 .category_item h5{
     text-align: right;
     direction: rtl;
@@ -57,7 +60,7 @@
     font-size: 20px !important;
 }
 
-input ,.d-flex, .card {
+input ,.d-flex, .card ,.modal{
     text-align: right;
     direction: rtl;
 }
@@ -66,10 +69,8 @@ input ,.d-flex, .card {
     font-size: 17px !important;
 }
 
-
-.navbar_home ,p{
+.navbar_home ,p {
     direction: rtl !important;
-    
 }
 
 .navbar_home .logo_home{
@@ -82,8 +83,46 @@ input ,.d-flex, .card {
     text-align: right;
 }
 
+.modal .btn-close{
+    float: left !important;
+    position: absolute;
+    top: 6%;
+    left: 2%;
+}
+
+.box_messages .send .row{
+    direction: rtl !important;
+    text-align: right;
+}
+
+.box_messages .recive .row{
+    direction: ltr !important;
+    text-align: ltr !important;
+}
+
+.box_drob_doun_under{
+    right: 0;
+}
+
+.navbar_profile_ul{
+    width: 100%;
+    text-align: left !important;
+}
+
+.box_drob_doun_under .box_hover_main{
+    right: 299px;
+    border-left: 1px solid var(--main-color-alt);
+    border-right: 0px;
+    border-bottom: 1px solid var(--main-color-alt);
+}
+
+.Complaints_Suggestions_section .container {
+    direction: rtl;
+    text-align: right;
+}
 
 
-
-
-
+.Complaints_Suggestions_section .container .card{
+    direction: rtl;
+    text-align: center !important;
+}

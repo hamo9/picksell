@@ -24,226 +24,666 @@
 
     <!-- bootstrap for arabic -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
-    integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <!-- css style for arabic only -->
-    <link rel="stylesheet" href="../assets/css/rtl.css">
-    
+
 
     <!-- style for responsive pages -->
     <link rel="stylesheet" href="../assets/css/responsive.css">
 
     <!-- style for animation css -->
     <link rel="stylesheet" href="../assets/css/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- jquery script -->
     <script src="../assets/js/jquery.min.js"></script>
 
+    <!-- css style for arabic only -->
+    <link rel="stylesheet" href="../assets/css/rtl.css">
 
 </head>
 
 <body>
 
-    <!-- navbar here -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid nav-cont">
-            <img src="../assets/img/Logo1.png" alt="" width="165" height="60">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+
+    <!-- ===> [ Start navbar ] <================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_profile fixed-top">
+        <div class="container">
+
+
+            <div class="position-relative d-lg-none nav_box_notification">
+                <i class="fa-solid fa-bell fs-3 mt-2"></i>
+                <span class="position-absolute top-1  translate-middle badge rounded-pill bg-warning">
+                    99+
+                </span>
+
+                <div class="container_drop_noti d-none">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5>What's new on the site</h5>
+                        </div>
+                        <div class="card-body ">
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-relative d-lg-none">
+                <i class="fa-solid fa-heart fs-3 mt-2"></i>
+                <span class="position-absolute top-1  translate-middle badge rounded-pill bg-warning">
+                    99+
+                </span>
+            </div>
+
+            <div class="position-relative d-lg-none">
+                <i class="fa-solid fa-cart-shopping fs-3 mt-2"></i>
+                <span class="position-absolute top-1  translate-middle badge rounded-pill bg-warning">
+                    99+
+                </span>
+            </div>
+
+            <a class="navbar-brand logo_home" href="#">
+                <img src="../assets/img/Logo1.png" alt="" class="d-inline-block align-text-top">
+            </a>
+
+            <form class="form_navbar_profile d-none d-lg-block">
+                <div class="d-flex box_search_nav">
+                    <input class="me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0 row navbar_profile_ul" style="direction: ltr !important;">
+                    <div class="col-1"></div>
 
-                    <form class="d-flex m-lg-4 search">
-                        <input class="form-control btn-outline-warning" type="search"
-                            placeholder="What are you looking for?" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit"><i
-                                class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-
-                    <li class="nav-item m-lg-4">
-                        <a class="nav-link" aria-current="page" href="#" style="color: #1F40B2;"><span>0</span><i
-                                class="fa-solid fa-cart-shopping"></i></a>
+                    <li class="nav-link position-relative  col-2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning">
+                            99+
+                        </span>
                     </li>
 
-                    <li class="nav-item m-lg-4">
-                        <a class="nav-link" href="#" style="color: #1F40B2;"><span>0</span><i
-                                class="fa-solid fa-heart"></i></a>
+                    <li class="nav-link position-relative  col-2">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning">
+                            99+
+                        </span>
                     </li>
 
-                    <li class="nav-item m-lg-4" id="bell">
-                        <a class="nav-link" href="#" style="color: #1F40B2;" onclick="toggleDiv()"><i
-                                class="fa-solid fa-bell"></i></a>
-                    </li>
 
-                    <li class="nav-item dropdown m-lg-4">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="color: #1F40B2;">
-                            <i class="fa-solid fa-user"></i>
-                            Hello Marwa Mohammad
+                    <li class="nav-item col-5 navbar_drop_profile">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-user"></i><span class="p-2 fs-5">Hamad shahat</span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#"><img src="../assets/img/Nav2/user.png" alt="user icon"
-                                        style="width: 35px; margin-right: 5px;">My Account</a></li>
-                            <li><a class="dropdown-item" href="#"><img src="../assets/img/Nav2/wallet.png"
-                                        alt="Wallet icon" style="width: 40px; margin-right: 5px;">Wallet</a></li>
-                            <li><a class="dropdown-item" href="#"><img src="../assets/img/Nav2/orders.jpg"
-                                        alt="orders icon" style="width: 35px; margin-right: 5px;">Orders</a></li>
-                            <li><a class="dropdown-item" href="#"><img src="../assets/img/Nav2/logOut.png"
-                                        alt="orders icon" style="width: 35px; margin-right: 5px;">LogOut</a></li>
-                        </ul>
+
+                        <div class="container_drop_profile d-none">
+                            <div class="card card-body  card_profile_items shadow">
+
+                                <a href="profile.html" class="mb-2 active">
+                                    <h5> <img src="../assets/img/profile/account-desaturated.svg" alt="" width="35px"
+                                            height="45px"> <span class="p-3">Account</span></h5>
+                                </a>
+
+                                <a href="wallet.html" class="mb-2">
+                                    <h5> <img src="../assets/img/profile/wallet-desaturated.svg" alt="" width="35px"
+                                            height="45px"><span class="p-3">Wallet</span></h5>
+                                </a>
+
+                                <a href="orders.html" class="mb-2">
+                                    <h5> <img src="../assets/img/profile/orders-desaturated.svg" alt="" width="35px"
+                                            height="45px"><span class="p-3">Orders</span></h5>
+                                </a>
+
+                                <a href="#" class="mb-2">
+                                    <h5> <img src="../assets/img/profile/logout-desaturated.svg" alt="" width="35px"
+                                            height="45px"><span class="p-3">Logout</span> </h5>
+                                </a>
+
+                            </div>
+                        </div>
+
+
                     </li>
 
+                    <li class="nav-item col-1 nav_box_notification">
+
+                        <a class="nav-link position-relative ">
+                            <i class="fa-solid fa-bell fs-4"></i>
+                            <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning sma">
+                                99+
+                            </span>
+                        </a>
+
+                        <div class="container_drop_noti d-none">
+                            <div class="card shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>What's new on the site</h5>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
 
                 </ul>
 
+
             </div>
+
         </div>
     </nav>
 
-    <div class="container-fluid nav-attachment">
-        <a href="#" class="m-lg-4"><i class="fa-solid fa-store"></i><span>Products</span></a>
-        <a href="#" class="m-lg-4"><i class="fa-solid fa-pen"></i>Complaints and suggestions</a>
-        <a href="#" class="m-lg-4"><i class="fa-solid fa-note-sticky"></i>Shipping notes</a>
+    <!-- under nav on desctop only -->
+    <div class="under_nav_disktop shadow-sm d-none d-lg-block">
+        <div class="d-flex p-0 m-0 ">
+            <div class=" m-0  item_one p-2">
+                <i class="bi bi-columns-gap px-2"></i> جميع الاقسام <i class="fa-solid fa-chevron-down px-2"></i>
+                <div class="box_drob_doun_under mt-2 d-none">
+                    <ul class="list-group">
+
+                        <li class="list-group-item item_has_over_1">
+                            <i class="fas fa-user px-2"></i>
+                            الكترونيات
+                            <i class="fa-solid fa-angle-left float-end"></i>
+
+                            <div class="box_hover_main box_on_hover_1">
+                                <h5 class="h5">عرض الكل<i class="fa-solid fa-angle-left px-3"></i></h5>
+                                <hr>
+
+                                <div class="box_with_scroll">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">القسم الاول</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category tow</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category three</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item item_has_over_2">
+                            <i class="fas fa-user px-2"></i>
+                            An item tow
+                            <i class="fa-solid fa-angle-left float-end"></i>
+                            <div class="box_hover_main box_on_hover_2">
+                                <h5 class="h5">show all 2 <i class="fa-solid fa-angle-left px-3"></i></h5>
+                                <hr>
+
+                                <div class="box_with_scroll">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category one</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category tow</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category three</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item item_has_over_3">
+                            <i class="fas fa-user px-2"></i>
+                            An item three
+                            <i class="fa-solid fa-angle-left float-end"></i>
+                            <div class="box_hover_main box_on_hover_3">
+                                <h5 class="h5">show all 3 <i class="fa-solid fa-angle-left px-3"></i></h5>
+                                <hr>
+
+                                <div class="box_with_scroll">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category one</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category tow</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category three</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item item_has_over_4">
+                            <i class="fas fa-user px-2"></i>
+                            An item fore
+                            <i class="fa-solid fa-angle-left float-end"></i>
+                            <div class="box_hover_main box_on_hover_4">
+                                <h5 class="h5">show all 4 <i class="fa-solid fa-angle-left px-3"></i></h5>
+                                <hr>
+
+                                <div class="box_with_scroll">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category one</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category tow</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category three</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <a href="products.html" class="m-0 item_tow p-2">
+                <i class="fa-solid fa-cart-shopping px-2"></i> المنتجات
+            </a>
+
+            <div class=" m-0 item_three p-2">
+                <i class="fa-solid fa-file-lines px-2"></i> الشكاوى والمقترحات
+            </div>
+        </div>
     </div>
 
-    <div id="notifications">
-        <div style="width: 100%; height: 70px; background-color: #1F40B2; padding-top: 20px;">
-            <p style="color: white; text-align: center; font-size: large;">What's new on the site</p>
+    <!-- under nav on mobile only -->
+    <div class=" under_nav_form d-lg-none shadow-sm">
+        <div class="container">
+            <form class="form_under_navbar">
+                <div class="d-flex box_search_nav">
+                    <input class="me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
         </div>
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
     </div>
-    <!-- end navbar -->
+
+    <!-- start dropdown for mobile -->
+    <div class="offcanvas offcanvas-start nav_for_mobil" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+
+                <div class="logo_home_mobile">
+                    <img src="../assets/img/Logo1.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                </div>
+
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body offcanvas_profile">
+            <a class="mb-2 active">
+                <h5> <img src="../assets/img/profile/account-desaturated.svg" alt="" width="35px" height="45px"> <span
+                        class="p-3">Account</span></h5>
+            </a>
+            <a class="mb-2">
+                <h5> <img src="../assets/img/profile/wallet-desaturated.svg" alt="" width="35px" height="45px"><span
+                        class="p-3">Wallet</span></h5>
+            </a>
+            <a class="mb-2">
+                <h5> <img src="../assets/img/profile/orders-desaturated.svg" alt="" width="35px" height="45px"><span
+                        class="p-3">Orders</span></h5>
+            </a>
+            <a class="mb-2">
+                <h5> <img src="../assets/img/profile/logout-desaturated.svg" alt="" width="35px" height="45px"><span
+                        class="p-3">Logout</span> </h5>
+            </a>
+
+        </div>
+    </div>
+    <!-- end dropdown for mobile -->
+
+    <!-- ===> [ End navbar ] <================== -->
 
     <div class="container mb-5">
         <!-- start route pages links -->
         <div class="route_links mt-4">
             <div class="d-flex my-3">
-                <a href="#"><p>الرئيسيه <span class="px-2">></span></p></a>
-                <a href="#"><p>المنتجات <span class="px-2">></span></p></a>
-                <a href="#" class="active"><p>جميع المنتجات</p></a>
+                <a href="#">
+                    <p>الرئيسيه <span class="px-2">></span></p>
+                </a>
+                <a href="#">
+                    <p>المنتجات <span class="px-2">></span></p>
+                </a>
+                <a href="#" class="active">
+                    <p>جميع المنتجات</p>
+                </a>
             </div>
         </div>
-       
+
         <!-- End route pages links -->
         <section id="all_products" class="all_products my-4">
-            
-           
+
+
 
             <div class="row">
-               
+
 
                 <!-- start sidebar -->
                 <div class="col-md-3 card_categories mb-4">
 
                     <!-- this item show on phone only [ list categories ]-->
                     <div class="d-md-none">
-                            
+
                         <div class="dropdown">
-                            <a class="btn dropdown_category border-1 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="btn dropdown_category border-1 dropdown-toggle" href="#" role="button"
+                                id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                                 الاقسام
                             </a>
-                        
+
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                           
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-columns-gap px-2"></i>all products</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-columns-gap px-2"></i>all products</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-columns-gap px-2"></i>all products</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="bi bi-columns-gap px-2"></i>all products</a></li>
+
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-columns-gap px-2"></i>all
+                                        products</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-columns-gap px-2"></i>all
+                                        products</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-columns-gap px-2"></i>all
+                                        products</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="bi bi-columns-gap px-2"></i>all
+                                        products</a></li>
                             </ul>
                         </div>
                     </div>
@@ -251,50 +691,50 @@
                     <!-- this card show on desktop only  [ list categories ]-->
                     <div class="card card-body d-none d-md-block">
                         <h4 class="mb-4">الاقسام</h4>
-                      
-                            <a href="#" class=" active">
-                                <p class="lead">
-                                    <i class="bi bi-columns-gap px-2"></i>
-                                   جميع المنتجات
-                                </p>
-                            </a>
-    
-                            <a href="#" class="">
-                                <p class="lead">
-                                    <i class="bi bi-columns-gap px-2"></i>
-                                   جميع المنتجات
-                                </p>
-                            </a>
 
-                            <a href="#" class="">
-                                <p class="lead">
-                                    <i class="bi bi-columns-gap px-2"></i>
-                                   جميع المنتجات
-                                </p>
-                            </a>
-    
-                            <a href="#" class="">
-                                <p class="lead">
-                                    <i class="bi bi-columns-gap px-2"></i>
-                                   جميع المنتجات
-                                </p>
-                            </a>
-    
-                            <a href="#" class="">
-                                <p class="lead">
-                                    <i class="bi bi-columns-gap px-2"></i>
-                                   جميع المنتجات
-                                </p>
-                            </a>
-                        
-                       
+                        <a href="#" class=" active">
+                            <p class="lead">
+                                <i class="bi bi-columns-gap px-2"></i>
+                                جميع المنتجات
+                            </p>
+                        </a>
+
+                        <a href="#" class="">
+                            <p class="lead">
+                                <i class="bi bi-columns-gap px-2"></i>
+                                جميع المنتجات
+                            </p>
+                        </a>
+
+                        <a href="#" class="">
+                            <p class="lead">
+                                <i class="bi bi-columns-gap px-2"></i>
+                                جميع المنتجات
+                            </p>
+                        </a>
+
+                        <a href="#" class="">
+                            <p class="lead">
+                                <i class="bi bi-columns-gap px-2"></i>
+                                جميع المنتجات
+                            </p>
+                        </a>
+
+                        <a href="#" class="">
+                            <p class="lead">
+                                <i class="bi bi-columns-gap px-2"></i>
+                                جميع المنتجات
+                            </p>
+                        </a>
+
+
 
                     </div>
 
                     <div class="my-5 profit d-none d-md-block">
                         <h4 class="text_main_color mb-3">profit picksell products</h4>
-                        
-                        <a href="#" class="d-flex profit_item" >
+
+                        <a href="#" class="d-flex profit_item">
                             <div class="p-2">
                                 <img class="rounded" src="../assets/img/profit.jpg" width="80px" height="80px" alt="">
                             </div>
@@ -305,7 +745,7 @@
                             </div>
                         </a>
 
-                        <a href="#" class="d-flex profit_item" >
+                        <a href="#" class="d-flex profit_item">
                             <div class="p-2">
                                 <img class="rounded" src="../assets/img/profit.jpg" width="80px" height="80px" alt="">
                             </div>
@@ -316,7 +756,7 @@
                             </div>
                         </a>
 
-                        <a href="#" class="d-flex profit_item" >
+                        <a href="#" class="d-flex profit_item">
                             <div class="p-2">
                                 <img class="rounded" src="../assets/img/profit.jpg" width="80px" height="80px" alt="">
                             </div>
@@ -331,7 +771,7 @@
 
                     <div class="my-5 recently_arrived  d-none d-md-block">
                         <h4 class="text_main_color mb-3">recently arrived</h4>
-                        <a href="#" class="d-flex profit_item" >
+                        <a href="#" class="d-flex profit_item">
                             <div class="p-2">
                                 <img class="rounded" src="../assets/img/recintly.jpg" width="80px" height="80px" alt="">
                             </div>
@@ -342,7 +782,7 @@
                             </div>
                         </a>
 
-                        <a href="#" class="d-flex profit_item" >
+                        <a href="#" class="d-flex profit_item">
                             <div class="p-2">
                                 <img class="rounded" src="../assets/img/recintly.jpg" width="80px" height="80px" alt="">
                             </div>
@@ -353,7 +793,7 @@
                             </div>
                         </a>
 
-                        <a href="#" class="d-flex profit_item" >
+                        <a href="#" class="d-flex profit_item">
                             <div class="p-2">
                                 <img class="rounded" src="../assets/img/recintly.jpg" width="80px" height="80px" alt="">
                             </div>
@@ -366,7 +806,7 @@
 
                     </div>
 
-                
+
                 </div>
                 <!-- end sidebar -->
 
@@ -389,25 +829,25 @@
                             </div>
                         </div>
                         <div class="row col-7 col-md-5">
-                            
-                                <div class="col-4 col-md-5 text-end">
-                                    <span class="text-black-50 fs-5">ترتيب حسب</span>
-                                </div>
-                                
-                                <div class="col-8 col-md-7">
-                                    <select name="" id="" class="my_select col-12">
-                                        <option value="">الاكثر مبيعا</option>
-                                        <option value="">اجدد المنتجات</option>
-                                    </select>
-                                </div>
-                                
+
+                            <div class="col-4 col-md-5 text-end">
+                                <span class="text-black-50 fs-5">ترتيب حسب</span>
+                            </div>
+
+                            <div class="col-8 col-md-7">
+                                <select name="" id="" class="my_select col-12">
+                                    <option value="">الاكثر مبيعا</option>
+                                    <option value="">اجدد المنتجات</option>
+                                </select>
+                            </div>
+
                         </div>
                     </div>
 
                     <div class="container_all_products">
                         <div class="row">
 
-                            
+
                             <div class="col-md-4">
                                 <div class="card card-body shadow mb-4 card_cart">
                                     <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
@@ -418,15 +858,16 @@
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i
+                                                    class="bi bi-cart-plus"></i>
                                             </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
-                                        
+
                                     </div>
-        
+
                                 </div>
                             </div>
 
@@ -440,15 +881,16 @@
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i
+                                                    class="bi bi-cart-plus"></i>
                                             </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
-                                        
+
                                     </div>
-        
+
                                 </div>
                             </div>
 
@@ -462,15 +904,16 @@
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i
+                                                    class="bi bi-cart-plus"></i>
                                             </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
-                                        
+
                                     </div>
-        
+
                                 </div>
                             </div>
 
@@ -484,15 +927,16 @@
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i
+                                                    class="bi bi-cart-plus"></i>
                                             </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
-                                        
+
                                     </div>
-        
+
                                 </div>
                             </div>
 
@@ -506,15 +950,16 @@
                                     </p>
                                     <div class="row">
                                         <div class="col-9 pt-1">
-                                            <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
+                                            <button class="btn rounded-pill">اضافه الي العربه <i
+                                                    class="bi bi-cart-plus"></i>
                                             </button>
                                         </div>
                                         <div class="col-3 text-center">
                                             <i class="bi bi-heart btn icon_heart fs-3"></i>
                                         </div>
-                                        
+
                                     </div>
-        
+
                                 </div>
                             </div>
 
@@ -525,57 +970,57 @@
 
 
             </div>
-            
+
         </section>
 
     </div>
 
 
-  
 
 
-    
-        <!-- start footer -->
-        <section class="footer" id="footer">
-            <div class="container container_with_lang">
-                <div class="row">
-                    <div class="col-md-7 mb-5">
-                        <h6 class="main_title text-white mb-5">Picksell.com</h6>
-                        <p class="lead">
-                            تاجر بتدعم كل اللي بيفكر يبني تجارته الإلكترونية بخدمات كتير. أولا منصة تتيح للتجار إدارة
-                            ومتابعة الطلبيات، اقتراح وتوفير مجموعة كبيرة من المنتجات، خدمات شحن للمنتجات وتوصيل للعميل
-                            النهائي والتحصيل منهم، تحويل فوري لقيمة المبيعات للتجار، بالإضافة لاستشارات تسويقية تساعد
-                            التجار في بيع منتجاتهم من خلال الإنترنت واقتراح منتجات تناسبهم وتناسب عملائهم المستهدفين.
-                        </p>
-                    </div>
-                    <div class="col-md-5 text-center">
-                        <h4 class="text-white">تابعنا على مواقع التواصل الإجتماعي</h4>
-                        <div class="box_social text-center">
-                            <div class="d-flex justify-content-center">
-                                <div><i class="bi bi-facebook"></i></div>
-                                <div><i class="bi bi-whatsapp"></i></div>
-                                <div><i class="bi bi-linkedin"></i></div>
-                                <div><i class="bi bi-twitter"></i></div>
-                                <div><i class="bi bi-youtube"></i></div>
-                            </div>
-                        </div>
-                        <h5 class="mt-5">تواصل معنا من خلال البريد الإلكتروني:</h5>
-                        <p class="lead">
-                            <strong class="pr-3">البريد الإلكتروني </strong>
-                            <a href="#" class="text-info">
-                                example@picksell.com
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="mt-5 text-center">
+
+
+    <!-- start footer -->
+    <section class="footer" id="footer">
+        <div class="container container_with_lang">
+            <div class="row">
+                <div class="col-md-7 mb-5">
+                    <h6 class="main_title text-white mb-5">Picksell.com</h6>
                     <p class="lead">
-                        جميع الحقوق محفوظة لشركة بيكسل © 2022
+                        تاجر بتدعم كل اللي بيفكر يبني تجارته الإلكترونية بخدمات كتير. أولا منصة تتيح للتجار إدارة
+                        ومتابعة الطلبيات، اقتراح وتوفير مجموعة كبيرة من المنتجات، خدمات شحن للمنتجات وتوصيل للعميل
+                        النهائي والتحصيل منهم، تحويل فوري لقيمة المبيعات للتجار، بالإضافة لاستشارات تسويقية تساعد
+                        التجار في بيع منتجاتهم من خلال الإنترنت واقتراح منتجات تناسبهم وتناسب عملائهم المستهدفين.
+                    </p>
+                </div>
+                <div class="col-md-5 text-center">
+                    <h4 class="text-white">تابعنا على مواقع التواصل الإجتماعي</h4>
+                    <div class="box_social text-center">
+                        <div class="d-flex justify-content-center">
+                            <div><i class="bi bi-facebook"></i></div>
+                            <div><i class="bi bi-whatsapp"></i></div>
+                            <div><i class="bi bi-linkedin"></i></div>
+                            <div><i class="bi bi-twitter"></i></div>
+                            <div><i class="bi bi-youtube"></i></div>
+                        </div>
+                    </div>
+                    <h5 class="mt-5">تواصل معنا من خلال البريد الإلكتروني:</h5>
+                    <p class="lead">
+                        <strong class="pr-3">البريد الإلكتروني </strong>
+                        <a href="#" class="text-info">
+                            example@picksell.com
+                        </a>
                     </p>
                 </div>
             </div>
-        </section>
-        <!-- End footer -->
+            <div class="mt-5 text-center">
+                <p class="lead">
+                    جميع الحقوق محفوظة لشركة بيكسل © 2022
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- End footer -->
 
     </section>
 
@@ -583,6 +1028,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- script for animation on page -->
     <script src="../assets/js/wow.min.js"></script>

@@ -51,166 +51,595 @@
 
 <body>
 
-    <!-- navbar here -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid nav-cont">
-            <img src="../assets/img/Logo1.png" alt="" width="165" height="60">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+
+
+    <!-- ===> [ Start navbar ] <================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar_profile fixed-top">
+        <div class="container">
+
+
+            <div class="position-relative d-lg-none nav_box_notification">
+                <i class="fa-solid fa-bell fs-3 mt-2"></i>
+                <span class="position-absolute top-1  translate-middle badge rounded-pill bg-warning">
+                    99+
+                </span>
+
+                <div class="container_drop_noti d-none">
+                    <div class="card shadow">
+                        <div class="card-header bg-primary text-white">
+                            <h5>What's new on the site</h5>
+                        </div>
+                        <div class="card-body ">
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                            <div class="row my-3">
+                                <div class="col-2">
+                                    <i class="fa-solid fa-bell"></i>
+                                </div>
+                                <div class="col-10">
+                                    Lorem ipsum, dolor sit amet consectetur
+                                    <span class="float-end text-black-50 small">10/225</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-relative d-lg-none">
+                <i class="fa-solid fa-heart fs-3 mt-2"></i>
+                <span class="position-absolute top-1  translate-middle badge rounded-pill bg-warning">
+                    99+
+                </span>
+            </div>
+
+            <div class="position-relative d-lg-none">
+                <i class="fa-solid fa-cart-shopping fs-3 mt-2"></i>
+                <span class="position-absolute top-1  translate-middle badge rounded-pill bg-warning">
+                    99+
+                </span>
+            </div>
+
+            <a class="navbar-brand logo_home" href="#">
+                <img src="../assets/img/Logo1.png" alt="" class="d-inline-block align-text-top">
+            </a>
+
+            <form class="form_navbar_profile d-none d-lg-block">
+                <div class="d-flex box_search_nav">
+                    <input class="me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0 row navbar_profile_ul" style="direction: ltr !important;">
+                    <div class="col-1"></div>
 
-                    <form class="d-flex m-lg-4 search">
-                        <input class="form-control btn-outline-warning" type="search"
-                            placeholder="What are you looking for?" aria-label="Search">
-                        <button class="btn btn-outline-warning" type="submit"><i
-                                class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-
-                    <li class="nav-item m-lg-4">
-                        <a class="nav-link" aria-current="page" href="#" style="color: #1F40B2;"><span>0</span><i
-                                class="fa-solid fa-cart-shopping"></i></a>
+                    <li class="nav-link position-relative  col-2">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning">
+                            99+
+                        </span>
                     </li>
 
-                    <li class="nav-item m-lg-4">
-                        <a class="nav-link" href="#" style="color: #1F40B2;"><span>0</span><i
-                                class="fa-solid fa-heart"></i></a>
+                    <li class="nav-link position-relative  col-2">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning">
+                            99+
+                        </span>
                     </li>
 
-                    <li class="nav-item m-lg-4" id="bell">
-                        <a class="nav-link" href="#" style="color: #1F40B2;" onclick="toggleDiv()"><i
-                                class="fa-solid fa-bell"></i></a>
-                    </li>
 
-                    <li class="nav-item dropdown m-lg-4">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" style="color: #1F40B2;">
-                            <i class="fa-solid fa-user"></i>
-                            Hello Marwa Mohammad
+                    <li class="nav-item col-5 navbar_drop_profile">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-user"></i><span class="p-2 fs-5">Hamad shahat</span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#"><img src="../assets/img/Nav2/user.png" alt="user icon"
-                                        style="width: 35px; margin-right: 5px;">My Account</a></li>
-                            <li><a class="dropdown-item" href="#"><img src="../assets/img/Nav2/wallet.png"
-                                        alt="Wallet icon" style="width: 40px; margin-right: 5px;">Wallet</a></li>
-                            <li><a class="dropdown-item" href="#"><img src="../assets/img/Nav2/orders.jpg"
-                                        alt="orders icon" style="width: 35px; margin-right: 5px;">Orders</a></li>
-                            <li><a class="dropdown-item" href="#"><img src="../assets/img/Nav2/logOut.png"
-                                        alt="orders icon" style="width: 35px; margin-right: 5px;">LogOut</a></li>
-                        </ul>
+
+                        <div class="container_drop_profile d-none">
+                            <div class="card card-body  card_profile_items shadow">
+
+                                <a href="profile.html" class="mb-2 active">
+                                    <h5> <img src="../assets/img/profile/account-desaturated.svg" alt="" width="35px"
+                                            height="45px"> <span class="p-3">Account</span></h5>
+                                </a>
+
+                                <a href="wallet.html" class="mb-2">
+                                    <h5> <img src="../assets/img/profile/wallet-desaturated.svg" alt="" width="35px"
+                                            height="45px"><span class="p-3">Wallet</span></h5>
+                                </a>
+
+                                <a href="orders.html" class="mb-2">
+                                    <h5> <img src="../assets/img/profile/orders-desaturated.svg" alt="" width="35px"
+                                            height="45px"><span class="p-3">Orders</span></h5>
+                                </a>
+
+                                <a href="#" class="mb-2">
+                                    <h5> <img src="../assets/img/profile/logout-desaturated.svg" alt="" width="35px"
+                                            height="45px"><span class="p-3">Logout</span> </h5>
+                                </a>
+
+                            </div>
+                        </div>
+
+
                     </li>
 
+                    <li class="nav-item col-1 nav_box_notification">
+
+                        <a class="nav-link position-relative ">
+                            <i class="fa-solid fa-bell fs-4"></i>
+                            <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning sma">
+                                99+
+                            </span>
+                        </a>
+
+                        <div class="container_drop_noti d-none">
+                            <div class="card shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>What's new on the site</h5>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row my-3">
+                                        <div class="col-2">
+                                            <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="col-10">
+                                            Lorem ipsum, dolor sit amet consectetur
+                                            <span class="float-end text-black-50 small">10/225</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
 
                 </ul>
 
+
             </div>
+
         </div>
     </nav>
 
-    <div class="container-fluid nav-attachment">
-        <a href="#" class="m-lg-4"><i class="fa-solid fa-store"></i><span>Products</span></a>
-        <a href="#" class="m-lg-4"><i class="fa-solid fa-pen"></i>Complaints and suggestions</a>
-        <a href="#" class="m-lg-4"><i class="fa-solid fa-note-sticky"></i>Shipping notes</a>
+    <!-- under nav on desctop only -->
+    <div class="under_nav_disktop shadow-sm d-none d-lg-block">
+        <div class="d-flex p-0 m-0 ">
+            <div class=" m-0  item_one p-2">
+                <i class="bi bi-columns-gap px-2"></i> جميع الاقسام <i class="fa-solid fa-chevron-down px-2"></i>
+                <div class="box_drob_doun_under mt-2 d-none">
+                    <ul class="list-group">
+
+                        <li class="list-group-item item_has_over_1">
+                            <i class="fas fa-user px-2"></i>
+                            الكترونيات
+                            <i class="fa-solid fa-angle-left float-end"></i>
+
+                            <div class="box_hover_main box_on_hover_1">
+                                <h5 class="h5">عرض الكل<i class="fa-solid fa-angle-left px-3"></i></h5>
+                                <hr>
+
+                                <div class="box_with_scroll">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">القسم الاول</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category tow</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category three</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item item_has_over_2">
+                            <i class="fas fa-user px-2"></i>
+                            An item tow
+                            <i class="fa-solid fa-angle-left float-end"></i>
+                            <div class="box_hover_main box_on_hover_2">
+                                <h5 class="h5">show all 2 <i class="fa-solid fa-angle-left px-3"></i></h5>
+                                <hr>
+
+                                <div class="box_with_scroll">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category one</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category tow</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category three</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item item_has_over_3">
+                            <i class="fas fa-user px-2"></i>
+                            An item three
+                            <i class="fa-solid fa-angle-left float-end"></i>
+                            <div class="box_hover_main box_on_hover_3">
+                                <h5 class="h5">show all 3 <i class="fa-solid fa-angle-left px-3"></i></h5>
+                                <hr>
+
+                                <div class="box_with_scroll">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category one</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category tow</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category three</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="list-group-item item_has_over_4">
+                            <i class="fas fa-user px-2"></i>
+                            An item fore
+                            <i class="fa-solid fa-angle-left float-end"></i>
+                            <div class="box_hover_main box_on_hover_4">
+                                <h5 class="h5">show all 4 <i class="fa-solid fa-angle-left px-3"></i></h5>
+                                <hr>
+
+                                <div class="box_with_scroll">
+                                    <div class="row">
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category one</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category tow</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="col-6 mb-4">
+                                            <h3 class="h5 mb-2">category three</h3>
+                                            <ul class="list-unstyled">
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                                <li class="pt-1"><a class="text-black-50">sub</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <a href="products.html" class="m-0 item_tow p-2">
+                <i class="fa-solid fa-cart-shopping px-2"></i> المنتجات
+            </a>
+
+            <div class=" m-0 item_three p-2">
+                <i class="fa-solid fa-file-lines px-2"></i> الشكاوى والمقترحات
+            </div>
+        </div>
     </div>
 
-    <div id="notifications">
-        <div style="width: 100%; height: 70px; background-color: #1F40B2; padding-top: 20px;">
-            <p style="color: white; text-align: center; font-size: large;">What's new on the site</p>
+    <!-- under nav on mobile only -->
+    <div class=" under_nav_form d-lg-none shadow-sm">
+        <div class="container">
+            <form class="form_under_navbar">
+                <div class="d-flex box_search_nav">
+                    <input class="me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
         </div>
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
-        <div class="note">
-            <img src="../assets/img/Nav2/notification.png">
-            <div class="prod-disc">
-                <p>cross bag for ladies</p>
-            </div>
-            <div class="prod-dtls">
-                <a href="#">Show</a>
-                <span>17April2022</span>
-            </div>
-        </div>
-
     </div>
-    <!-- end navbar -->
+
+    <!-- start dropdown for mobile -->
+    <div class="offcanvas offcanvas-start nav_for_mobil" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+
+                <div class="logo_home_mobile">
+                    <img src="../assets/img/Logo1.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                </div>
+
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body offcanvas_profile">
+            <a class="mb-2 active">
+                <h5> <img src="../assets/img/profile/account-desaturated.svg" alt="" width="35px" height="45px"> <span
+                        class="p-3">Account</span></h5>
+            </a>
+            <a class="mb-2">
+                <h5> <img src="../assets/img/profile/wallet-desaturated.svg" alt="" width="35px" height="45px"><span
+                        class="p-3">Wallet</span></h5>
+            </a>
+            <a class="mb-2">
+                <h5> <img src="../assets/img/profile/orders-desaturated.svg" alt="" width="35px" height="45px"><span
+                        class="p-3">Orders</span></h5>
+            </a>
+            <a class="mb-2">
+                <h5> <img src="../assets/img/profile/logout-desaturated.svg" alt="" width="35px" height="45px"><span
+                        class="p-3">Logout</span> </h5>
+            </a>
+
+        </div>
+    </div>
+    <!-- end dropdown for mobile -->
+
+    <!-- ===> [ End navbar ] <================== -->
 
 
 
@@ -452,7 +881,7 @@
     <!-- start best seller [ by hamada ] -->
     <section id="best_seller" class="best_seller">
         <div class="container container_with_lang">
-            <h1>الاكثر مبيعا <a href="#" class="float-end text-info fs-3 pt-2">عرض الكل</a>
+            <h1 class="h2">الاكثر مبيعا <a href="#" class="float-end text-info fs-3 pt-2">عرض الكل</a>
             </h1>
 
             <div class="mt-4 mb-5 box_slider p-md-3">
@@ -462,91 +891,95 @@
                 <div class="owl-carousel owl-theme owl-best_seller" dir="ltr">
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
 
                             </div>
-
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
 
                             </div>
-
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
 
                             </div>
-
-                        </div>
-                    </div>
-
-
-                    <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                            <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
-                            <div class="row">
-                                <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
-                                </div>
-                                <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
-                                </div>
-
-                            </div>
-
                         </div>
                     </div>
 
@@ -558,7 +991,7 @@
     <!-- start dealer offers [ by hamada ] -->
     <section id="dealer_offers" class="dealer_offers">
         <div class="container container_with_lang">
-            <h1>العروض الحصريه <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
+            <h1 class="h2">العروض الحصريه <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
             </h1>
 
 
@@ -569,95 +1002,97 @@
 
                 <div class="owl-carousel owl-theme owl-dealer_offers" dir="ltr">
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-
-
-                    <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                            <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
-                            <div class="row">
-                                <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
-                                </div>
-                                <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
-                                </div>
-                                
-                            </div>
-
-                        </div>
-                    </div>
-
 
                 </div>
 
@@ -684,7 +1119,7 @@
     <!-- start Highest profit picksell products [ by hamada ] -->
     <section id="profit_products" class="profit_products">
         <div class="container container_with_lang">
-            <h1>المنتجات الكسبانه <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
+            <h1 class="h2">المنتجات الكسبانه <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
             </h1>
 
             <div class="mt-4 mb-5 box_slider p-md-3">
@@ -694,72 +1129,128 @@
                 <div class="owl-carousel owl-theme owl-profit_products" dir="ltr">
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
 
-                    
+                    <div class="item">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
+                            <div class="text-black-50">اسم القسم</div>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-9 pt-1">
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -771,7 +1262,7 @@
     <!-- start  newest products [ by hamada ] -->
     <section id="newest_products" class="newest_products">
         <div class="container container_with_lang">
-            <h1>اجدد المنتجات <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
+            <h1 class="h2">اجدد المنتجات <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
             </h1>
 
             <div class="mt-4 mb-5 box_slider p-md-3">
@@ -779,73 +1270,97 @@
                 <i class="customNextBtn3 btn_slider_previos fa-solid fa-chevron-right fs-2 rounded-pill"></i>
 
                 <div class="owl-carousel owl-theme owl-newest_products" dir="ltr">
-                   
-                    <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                            <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
-                            <div class="row">
-                                <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
-                                </div>
-                                <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
-                                </div>
-                                
-                            </div>
-
-                        </div>
-                    </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
+                    <div class="item">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
+                            <div class="text-black-50">اسم القسم</div>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-9 pt-1">
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -856,7 +1371,7 @@
     <!-- start all products [ by hamada ] -->
     <section id="all_products" class="all_products">
         <div class="container container_with_lang">
-            <h1>جميع المنتجات <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
+            <h1 class="h2">جميع المنتجات <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
             </h1>
 
             <div class="mt-4 mb-5 box_slider p-md-3">
@@ -864,70 +1379,97 @@
                 <i class="customNextBtn4 btn_slider_previos fa-solid fa-chevron-right fs-2 rounded-pill"></i>
 
                 <div class="owl-carousel owl-theme owl-all_products" dir="ltr">
-                    
+
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -940,7 +1482,7 @@
     <!-- start mens wear [ by hamada ] -->
     <section id="mens_wear" class="mens_wear">
         <div class="container container_with_lang">
-            <h1>ملابس رجالي <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
+            <h1 class="h2">ملابس رجالي <a class="float-end text-info fs-3 pt-2">عرض الكل </a>
             </h1>
 
             <div class="mt-4 mb-5 box_slider p-md-3">
@@ -948,70 +1490,95 @@
                 <i class="customNextBtn5 btn_slider_previos fa-solid fa-chevron-right fs-2 rounded-pill"></i>
 
                 <div class="owl-carousel owl-theme owl-mens_wear" dir="ltr">
-                    
-                    <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
-                            <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
-                            <div class="row">
-                                <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
-                                </div>
-                                <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
-                                </div>
-                                
-                            </div>
-
-                        </div>
-                    </div>
 
                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-
-                     <div class="item">
-                        <div class="card card-body shadow mb-4 card_cart">
-                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3">
+                    <div class="item">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
                             <div class="text-black-50">اسم القسم</div>
-                            <h3>اسم المنتج</h3>
-                            <p class="lead">
-                                <strong>400 جنيه</strong>
-                            </p>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
                             <div class="row">
                                 <div class="col-9 pt-1">
-                                    <button class="btn rounded-pill">اضافه الي العربه <i class="bi bi-cart-plus"></i>
-                                    </button>
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
                                 </div>
                                 <div class="col-3 text-center">
-                                    <i class="bi bi-heart btn icon_heart fs-3"></i>
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
                                 </div>
-                                
-                            </div>
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card card-body mb-4 card_cart">
+                            <img src="../assets/img/seller.jpg" alt="" class="img-flid mb-3 product_img_hover">
+                            <div class="text-black-50">اسم القسم</div>
+                            <h2 class="h4 mt-1">اسم المنتج</h2>
+                            <div class="row mt-2">
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong> السعر : 400 جنيه</strong>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-md-12">
+                                    <p class="lead fs-6">
+                                        <strong>الربح : 20 جنيه</strong>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-9 pt-1">
+                                    <button class="btn rounded-pill col-12">اضافه الي العربه <i
+                                            class="bi bi-cart-plus"></i></button>
+                                </div>
+                                <div class="col-3 text-center">
+                                    <i class="bi bi-heart btn icon_heart product_icon_heart fs-3"></i>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
