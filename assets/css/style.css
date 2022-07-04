@@ -1,4 +1,4 @@
-/* 
+/*
 ==============================
 => [ main color #E8AC27 ]
 => [ second color #082594 ]
@@ -472,6 +472,9 @@ a{
     color: var(--secondary-color) !important;
 }
 
+.nav_badge_number{
+    font-size: 16px;
+}
 
 /* =======> [ End navbar for home ] <===================================*/
 
@@ -1671,4 +1674,112 @@ to {
 }
 
 /*===> End heart page <======================*/
+
+/* ==> start cart section <============================ */
+
+.cart_section .message_defould{
+    margin-top: 15vh;
+}
+
+.cart_section .message_defould .btn{
+    width: 150px;
+    font-size: 22px;
+}
+
+
+.cart_section .item_price_input{
+    width: 60px;
+}
+
+
+
+.box_for_cart_count{
+    width: 150px;
+    display: flex;
+}
+
+.box_for_cart_count i{
+    font-size: 25px;
+    margin: auto;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.box_for_cart_count i:hover{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+
+.box_for_cart_count input{
+    text-align: center;
+}
+/* 
+.cart_section table,
+.cart_section table tr,
+.cart_section table tr td, */
+.cart_section table tr th{
+    text-align: center;
+}
+
+.cart_section .card_order_details{
+    border-radius: 20px;
+}
+
+.cart_section .card_order_details .card-header{
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 20px;
+}
+
+.cart_section .card_order_details .card-header h4{
+    margin-top: 10px;
+}
+
+.opacity_5{
+    opacity: 0.5;
+}
+
+.cart_section .fa-close:hover{
+    color: tomato !important;
+}
+
+.cart_section table .price_error_msg{
+    font-size: 10px;
+}
+
+.cart_section table img{
+    width: 100px;
+    height: 100px;
+}
+/* ==> End cart section <============================ */
+
+/* ==> start notes page <============================ */
+
+.notes_page{
+    margin-top: 80px;
+}
+
+.notes_page h1 span{
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--main-color);
+    font-weight: 600;
+
+}
+
+.notes_page .title{
+    font-weight: 600;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.notes_page .text{
+    line-height: 1.8;
+    font-size: 17px;
+    color: #333;
+}
+
+/* ==> End notes page <============================ */
 

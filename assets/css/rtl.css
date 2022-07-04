@@ -116,13 +116,19 @@ input ,.d-flex, .card ,.modal{
     border-bottom: 1px solid var(--main-color-alt);
 }
 
-.Complaints_Suggestions_section .container {
+.Complaints_Suggestions_section .container ,h1{
     direction: rtl;
     text-align: right;
 }
 
 
-.Complaints_Suggestions_section .container .card{
+.Complaints_Suggestions_section .container .card {
     direction: rtl;
     text-align: center !important;
+}
+
+
+.notes_page .title{
+    text-align: right;
+    direction: rtl;
 }
